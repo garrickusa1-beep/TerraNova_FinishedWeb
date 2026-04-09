@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>TerraNova | Logistics</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body class="bg-background text-on-surface selection:bg-primary-container">
+    <!-- Top Nav -->
+    <nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-black/70 backdrop-blur-xl">
+        <div class="flex justify-between items-center max-w-screen-2xl mx-auto px-12 py-6">
+            <a href="index.html" class="text-xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50">TerraNova</a>
+            <div class="hidden md:flex flex-row items-center space-x-12">
+                <a class="font-inter tracking-tight font-medium text-[13px] uppercase text-zinc-500 hover:text-zinc-900 transition-colors" href="produce.html">Produce</a>
+                <a class="font-inter tracking-tight font-medium text-[13px] uppercase text-zinc-500 hover:text-zinc-900 transition-colors" href="logistics.html">Logistics</a>
+                <a class="font-inter tracking-tight font-medium text-[13px] uppercase text-zinc-500 hover:text-zinc-900 transition-colors" href="sustainability.html">Sustainability</a>
+                <a class="font-inter tracking-tight font-medium text-[13px] uppercase text-zinc-500 hover:text-zinc-900 transition-colors" href="contact.html">Contact</a>
+            </div>
+            <a href="contact.html" class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-inter text-[12px] uppercase font-bold tracking-widest hover:opacity-70 transition-opacity duration-300 active:scale-95">Inquire</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-screen flex flex-col items-center justify-center bg-surface-container-lowest px-12 pt-24 pb-48">
+            <div class="max-w-4xl text-center space-y-8">
+                <span class="font-label text-xs tracking-[0.2em] uppercase text-outline">Technical Excellence</span>
+                <h1 class="text-[clamp(3.5rem,10vw,7rem)] font-extrabold tracking-tighter leading-[0.9] text-on-background">
+                    The Science of Freshness.
+                </h1>
+                <p class="text-on-surface-variant text-xl max-w-2xl mx-auto font-light leading-relaxed tracking-tight">
+                    Engineering nature's timeline through advanced thermal dynamics and predictive logistics.
+                </p>
+            </div>
+        </section>
+
+        <!-- Process Block -->
+        <section class="bg-surface-container-low py-48 px-12">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-24 items-end">
+                    <div class="md:col-span-7">
+                        <span class="font-label text-xs tracking-[0.2em] uppercase text-outline mb-6 block">Supply Chain Architecture</span>
+                        <h2 class="text-5xl font-bold tracking-tight text-on-background mb-12">Invisible Precision.</h2>
+                        <p class="text-2xl font-light text-on-surface-variant leading-relaxed max-w-xl">
+                            We oversee the journey from the moment of harvest. Every heartbeat of the supply chain is monitored, refined, and optimized to protect the cellular integrity of our produce.
+                        </p>
+                    </div>
+                    <div class="md:col-span-5 aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+                        <img class="w-full h-full object-cover grayscale opacity-90 hover:grayscale-0 transition-all duration-700 cursor-crosshair" data-alt="ultra-modern minimalist laboratory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ58MTqa5kMAy0JmqG1tnrawOdyh8qvOrHWKJQIx_8X-_qj_KKmkXvaLmE7ifdPb3cW9fl6qGd737-LWpFROpJ72wyvELyPw5MF3kyJLC5Wi9ajUyrfFlOJr7rgnR6NVJI4zRvULV4j0k6qNUL_2aC6N1lmR4HVwfOctWFn6uZDT-7wRbF6L8TZ37daaMNPiwwk-9B2H5n9UX1U8aITOd-1krIHbcqbyQQMlrhxCOT8bP4e8lB2t7Ufm4-_j5gwpylZuUmmuZCcfvD"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Points -->
+        <section class="bg-surface-container-lowest py-48 px-12">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Climate Control -->
+                    <div class="bg-surface-container-low p-12 flex flex-col justify-between min-h-[400px]">
+                        <div class="space-y-6">
+                            <span class="material-symbols-outlined text-4xl text-primary" data-icon="thermostat">thermostat</span>
+                            <h3 class="text-2xl font-bold tracking-tight">Climate Control.</h3>
+                            <p class="text-on-surface-variant font-light leading-relaxed">
+                                Intelligent monitoring for 100% vitalization. Sensors maintain atmosphere composition to a 0.1% margin of error.
+                            </p>
+                        </div>
+                        <div class="pt-12">
+                            <div class="h-[1px] bg-outline-variant/20 w-full mb-4"></div>
+                            <span class="font-label text-[10px] uppercase tracking-widest text-outline">Thermal Delta: ±0.04°C</span>
+                        </div>
+                    </div>
+                    <!-- Traceability -->
+                    <div class="bg-surface p-12 flex flex-col justify-between min-h-[400px]">
+                        <div class="space-y-6">
+                            <span class="material-symbols-outlined text-4xl text-primary" data-icon="hub">hub</span>
+                            <h3 class="text-2xl font-bold tracking-tight">Traceability.</h3>
+                            <p class="text-on-surface-variant font-light leading-relaxed">
+                                A digital map for every single batch. Scanned at every waypoint to ensure total transparency from field to fork.
+                            </p>
+                        </div>
+                        <div class="relative w-full h-32 overflow-hidden bg-surface-container-high">
+                            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary to-transparent"></div>
+                            <img class="w-full h-full object-cover mix-blend-multiply opacity-40" data-alt="abstract digital mapping" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3kJke53c8fWcT4uHoxaXWRqIXEX-lxMILXI4C6vShxyJaMDP5Vq5GTftKwTJSPIfnvEJOpPjiD2FyqtrBwjYVs1-E3bYWRlLSWwpCth9_p7CSsVsI3zLmdKQMNpkE1oxatPt1PyCkkrgsIa3puogj-88a5hAQLC7Sw48HhkV8wXEPe6TLRw-PZRpMJLU8JJyGEw59IWxw1re7DAp9eKs0eg5rqBD3CQhDMcxzATQbfqDeC6qb7vqds1CG4UNTstJljYxl-RGg53iD"/>
+                        </div>
+                    </div>
+                    <!-- Efficiency -->
+                    <div class="bg-inverse-surface p-12 flex flex-col justify-between min-h-[400px] text-surface-container-lowest">
+                        <div class="space-y-6">
+                            <span class="material-symbols-outlined text-4xl text-primary-fixed-dim" data-icon="bolt">bolt</span>
+                            <h3 class="text-2xl font-bold tracking-tight">Efficiency.</h3>
+                            <p class="text-inverse-on-surface font-light leading-relaxed">
+                                Bypassing traditional delays to prioritize life-span. Direct routes and automated sorting reduce handling time by 40%.
+                            </p>
+                        </div>
+                        <div class="pt-12 text-primary-fixed-dim">
+                            <span class="text-4xl font-black tracking-tighter">4.0x</span>
+                            <p class="font-label text-[10px] uppercase tracking-widest opacity-60">Transit Velocity Factor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Visualization -->
+        <section class="bg-surface-container-low py-48 px-12 overflow-hidden">
+            <div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                <div class="space-y-12">
+                    <h2 class="text-6xl font-extrabold tracking-tighter leading-none text-on-background">The Origin <br/>Interface.</h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-6 border-l border-outline-variant/30 pl-8">
+                            <span class="text-outline font-label text-sm">01</span>
+                            <div>
+                                <h4 class="font-bold mb-2">Satellite Verification</h4>
+                                <p class="text-on-surface-variant text-sm font-light">Real-time spectral analysis of soil health and crop maturity prior to harvest selection.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 border-l border-outline-variant/30 pl-8">
+                            <span class="text-outline font-label text-sm">02</span>
+                            <div>
+                                <h4 class="font-bold mb-2">Automated Extraction</h4>
+                                <p class="text-on-surface-variant text-sm font-light">Non-invasive harvesting techniques to ensure the produce remains unbruised and structurally intact.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 border-l border-outline-variant/30 pl-8">
+                            <span class="text-outline font-label text-sm">03</span>
+                            <div>
+                                <h4 class="font-bold mb-2">Ethylene Scrubbing</h4>
+                                <p class="text-on-surface-variant text-sm font-light">Molecular filtering of the air during transport to pause the natural aging process indefinitely.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -top-12 -left-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+                    <div class="bg-surface-container-lowest p-2 shadow-2xl">
+                        <img class="w-full grayscale brightness-110" data-alt="high-tech agricultural logistics facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWDGSv7is5U822tkXL5C97rZc2Lx7eH7H_Nh8XPvlfuEAhiP0t9gYVOzGztsnfTqRzLv5cxN0DFl-fros9vLNy9sdIyQUO50bkmvwx2dbAH8BIk5fZptcvq5EZijv80xhWTDQTTcoURh_mlPM9dS3yyNi9ig6-HO0kXmm4Wf9ZFEBAGy4XxCGcRwg79LuODmNNu-ZlmDMo8hkWNgGjqP46XGYOAuXw34fZWz_aNVKQGTpbkNZtX7-EXHhg_avwBtiIk8J7MMGv2iU_"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-24 bg-zinc-50 dark:bg-zinc-950">
+        <div class="flex flex-col items-center space-y-8 px-12">
+            <div class="text-sm font-bold text-zinc-900 dark:text-zinc-50 tracking-tighter uppercase">TerraNova</div>
+            <div class="flex space-x-12">
+                <a class="font-inter text-xs tracking-[0.05em] uppercase text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-4 hover:underline transition-all duration-300" href="#">Instagram</a>
+                <a class="font-inter text-xs tracking-[0.05em] uppercase text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-4 hover:underline transition-all duration-300" href="#">LinkedIn</a>
+                <a class="font-inter text-xs tracking-[0.05em] uppercase text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-4 hover:underline transition-all duration-300" href="#">Direct</a>
+            </div>
+            <p class="font-inter text-xs pt-8 border-t border-zinc-200/50 w-full max-w-xs text-center tracking-[0.05em] uppercase text-zinc-400 dark:text-zinc-600">TerraNova. Europe. © 2026</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
