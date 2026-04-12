@@ -1,128 +1,232 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Contact | TerraNova</title>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="js/tailwind-config.js"></script>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css"/>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TerraNova | Contact B2B</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#f0f0f2",
+              "primary-container": "#3b3b3b",
+              "background": "#f9f9fb",
+              "on-secondary": "#ffffff",
+              "primary-fixed": "#5e5e5e",
+              "secondary": "#5f5e60",
+              "secondary-fixed": "#c8c6c8",
+              "error-container": "#ffdad6",
+              "tertiary": "#3a3b40",
+              "tertiary-container": "#747479",
+              "on-secondary-fixed-variant": "#3b3b3d",
+              "surface-variant": "#e2e2e4",
+              "secondary-fixed-dim": "#acaaad",
+              "on-tertiary-fixed-variant": "#e3e2e7",
+              "surface-container-high": "#e8e8ea",
+              "on-primary": "#e2e2e2",
+              "on-primary-container": "#ffffff",
+              "on-tertiary": "#e3e2e7",
+              "on-error-container": "#410002",
+              "secondary-container": "#d6d3d6",
+              "inverse-primary": "#c6c6c6",
+              "inverse-surface": "#2f3132",
+              "on-secondary-fixed": "#1b1b1d",
+              "on-secondary-container": "#1b1b1d",
+              "on-surface": "#1a1c1d",
+              "error": "#ba1a1a",
+              "on-error": "#ffffff",
+              "surface-container-low": "#f3f3f5",
+              "surface-container-highest": "#e2e2e4",
+              "on-background": "#1a1c1d",
+              "surface-dim": "#d9dadc",
+              "surface-tint": "#5e5e5e",
+              "surface": "#f9f9fb",
+              "tertiary-fixed-dim": "#46464b",
+              "surface-container": "#eeeef0",
+              "on-tertiary-container": "#ffffff",
+              "primary-fixed-dim": "#474747",
+              "on-tertiary-fixed": "#ffffff",
+              "on-primary-fixed-variant": "#e2e2e2",
+              "outline": "#777777",
+              "on-primary-fixed": "#ffffff",
+              "primary": "#000000",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#474747",
+              "tertiary-fixed": "#5e5e63",
+              "outline-variant": "#c6c6c6",
+              "surface-bright": "#f9f9fb"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
 </head>
-
-<body class="bg-surface-container-lowest text-on-surface">
-    <!-- Top Nav -->
-    <nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-black/70 backdrop-blur-xl">
-        <div class="flex justify-between items-center max-w-screen-2xl mx-auto px-12 py-6">
-            <a href="index.html" class="text-xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50">TerraNova</a>
-            <div class="hidden md:flex flex-row items-center space-x-12">
-                <a class="font-inter tracking-tight font-medium text-[13px] uppercase text-zinc-500 hover:text-zinc-900 transition-colors" href="produce.html">Produce</a>
-                <a class="font-inter tracking-tight font-medium text-[13px] uppercase text-zinc-500 hover:text-zinc-900 transition-colors" href="logistics.html">Logistics</a>
-                <a class="font-inter tracking-tight font-medium text-[13px] uppercase text-zinc-500 hover:text-zinc-900 transition-colors" href="sustainability.html">Sustainability</a>
-                <a class="font-inter tracking-tight font-medium text-[13px] uppercase text-zinc-500 hover:text-zinc-900 transition-colors" href="contact.html">Contact</a>
-            </div>
-            <a href="contact.html" class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-inter text-[12px] uppercase font-bold tracking-widest hover:opacity-70 transition-opacity duration-300 active:scale-95">Inquire</a>
-        </div>
-    </nav>
-
-    <main class="pt-48">
-        <!-- Hero Section -->
-        <section class="max-w-screen-2xl mx-auto px-12 text-center mb-48">
-            <span class="block font-inter text-xs tracking-[0.2em] uppercase text-on-surface-variant mb-6">Allocation Requests</span>
-            <h1 class="text-[5rem] md:text-[7rem] font-bold tracking-tighter leading-[0.9] text-on-surface mb-12">
-                Request an Allocation.
-            </h1>
-            <div class="max-w-2xl mx-auto">
-                <p class="text-xl font-medium text-on-surface mb-4">Elevate your inventory.</p>
-                <p class="text-on-surface-variant leading-relaxed">
-                    TerraNova partners with the most discerning retailers and distributors across Europe. Access our premium agricultural supply chain through high-intent logistics partnerships.
+<body class="bg-background text-on-background font-body antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-xl shadow-[0_40px_40px_rgba(26,28,29,0.04)] border-none">
+<div class="flex justify-between items-center w-full px-10 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-black dark:text-white font-headline">TerraNova</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors font-['Inter'] tracking-tight antialiased" href="index.html">Home</a>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors font-['Inter'] tracking-tight antialiased" href="produce.html">Produce</a>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors font-['Inter'] tracking-tight antialiased" href="logistics.html">Logistics</a>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors font-['Inter'] tracking-tight antialiased" href="sustainability.html">Sustainability</a>
+<a class="text-black dark:text-white font-bold border-b-2 border-black dark:border-white pb-1 font-['Inter'] tracking-tight antialiased" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary active:scale-95 transition-transform" data-icon="search">search</button>
+<button class="material-symbols-outlined text-primary md:hidden active:scale-95 transition-transform" data-icon="menu">menu</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Secondary Hero: Request an Allocation -->
+<section class="max-w-[1440px] mx-auto px-10 mb-24 md:mb-32">
+<div class="max-w-4xl">
+<span class="label-md uppercase tracking-[0.2em] text-primary/40 font-semibold mb-6 block">B2B Partnership</span>
+<h1 class="text-[clamp(3rem,8vw,5.5rem)] font-bold tracking-tighter leading-[0.9] text-primary font-headline">
+                    Request an <br/>Allocation.
+                </h1>
+</div>
+</section>
+<!-- Business Inquiry Block -->
+<section class="max-w-[1440px] mx-auto px-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+<!-- Editorial Text Side -->
+<div class="lg:col-span-5 space-y-12">
+<div class="space-y-6">
+<h2 class="text-3xl font-bold tracking-tight text-primary leading-tight">Elevate your inventory.</h2>
+<p class="text-lg text-primary/60 leading-[1.8] max-w-md">
+                            TerraNova partners with the most discerning retailers and distributors across Europe. 
+                            Our distribution network is selective, ensuring that every botanical specimen maintains its peak vitality from harvest to shelf.
+                        </p>
+</div>
+<div class="pt-8 border-t border-outline-variant/20">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary/40 mt-1" data-icon="schedule">schedule</span>
+<div>
+<h4 class="font-bold text-sm tracking-wide uppercase mb-1">Expectation.</h4>
+<p class="text-primary/60 text-sm">Response within one business cycle.</p>
+</div>
+</div>
+</div>
+<!-- Visual Specimen Placeholder (Editorial Gallery Style) -->
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden rounded-xl group">
+<img alt="Minimalist botanical arrangement" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="high-end minimalist close-up of a fresh green monstera leaf against a stark white background with sharp editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCspFfw2MPBJUi7To5rhL-_ED81j9LILq31nTQ-zWX_GgqO-Ua6-rR6AabwbaSolBLlgWAdvdgCfh6zTqQUcIxs7XuwFnQoF0RVndOWpG48SV5YJ_2acmJ4mPQmC-9Xlrdm7j92FOVtrkVNDRzzeh_JlZq43dbLziuQnDluH6ys4YmjAw08NjWvimghCsfb0XNrjmpGprnbXYNlimw0di2wzetsVXk0QlvuIMpQWrPdBhjAkyld7uq7HpEcbl4uehaggbY3pwmM-VE"/>
+<div class="absolute bottom-6 right-[-2.5rem] rotate-90 origin-left">
+<span class="text-[0.65rem] uppercase tracking-[0.3em] text-primary/40 font-medium">Specimen No. 042 / Distribution Grade</span>
+</div>
+</div>
+</div>
+<!-- High-end Form Side -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-16 rounded-xl shadow-[0_40px_40px_rgba(26,28,29,0.04)]">
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Input Field: Entity Name -->
+<div class="space-y-2">
+<label class="text-[0.65rem] uppercase tracking-widest font-bold text-primary/40">Entity Name</label>
+<input class="w-full bg-surface-container-highest border-none p-4 rounded-none focus:bg-surface-container-lowest focus:ring-0 focus:border-b focus:border-primary/20 transition-all placeholder:text-primary/20 outline-none" placeholder="Legal Organization" type="text"/>
+</div>
+<!-- Input Field: Region -->
+<div class="space-y-2">
+<label class="text-[0.65rem] uppercase tracking-widest font-bold text-primary/40">Region</label>
+<input class="w-full bg-surface-container-highest border-none p-4 rounded-none focus:bg-surface-container-lowest focus:ring-0 focus:border-b focus:border-primary/20 transition-all placeholder:text-primary/20 outline-none" placeholder="Operating Territory" type="text"/>
+</div>
+</div>
+<!-- Inquiry Type (Radios styled as minimalist chips) -->
+<div class="space-y-4">
+<label class="text-[0.65rem] uppercase tracking-widest font-bold text-primary/40 block">Inquiry Type</label>
+<div class="flex flex-wrap gap-4">
+<label class="group cursor-pointer">
+<input checked="" class="hidden peer" name="inquiry" type="radio"/>
+<span class="px-6 py-3 border border-outline-variant/30 text-xs font-bold tracking-widest uppercase peer-checked:bg-primary peer-checked:text-on-primary transition-all">Import</span>
+</label>
+<label class="group cursor-pointer">
+<input class="hidden peer" name="inquiry" type="radio"/>
+<span class="px-6 py-3 border border-outline-variant/30 text-xs font-bold tracking-widest uppercase peer-checked:bg-primary peer-checked:text-on-primary transition-all">Export</span>
+</label>
+<label class="group cursor-pointer">
+<input class="hidden peer" name="inquiry" type="radio"/>
+<span class="px-6 py-3 border border-outline-variant/30 text-xs font-bold tracking-widest uppercase peer-checked:bg-primary peer-checked:text-on-primary transition-all">Partnership</span>
+</label>
+</div>
+</div>
+<!-- Volume Interest -->
+<div class="space-y-2">
+<label class="text-[0.65rem] uppercase tracking-widest font-bold text-primary/40">Annual Volume Requirement</label>
+<select class="w-full bg-surface-container-highest border-none p-4 rounded-none focus:bg-surface-container-lowest focus:ring-0 focus:border-b focus:border-primary/20 transition-all outline-none appearance-none">
+<option>Tier 1 ( &gt; 100 Tons )</option>
+<option>Tier 2 ( 20 - 100 Tons )</option>
+<option>Tier 3 ( Boutique / Trial )</option>
+</select>
+</div>
+<!-- Narrative/Message -->
+<div class="space-y-2">
+<label class="text-[0.65rem] uppercase tracking-widest font-bold text-primary/40">Partnership Narrative</label>
+<textarea class="w-full bg-surface-container-highest border-none p-4 rounded-none focus:bg-surface-container-lowest focus:ring-0 focus:border-b focus:border-primary/20 transition-all placeholder:text-primary/20 outline-none resize-none" placeholder="Brief overview of distribution capabilities..." rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="pt-6">
+<button class="w-full md:w-auto bg-primary text-on-primary px-12 py-5 font-bold tracking-widest uppercase text-xs active:scale-95 transition-all hover:opacity-90 flex items-center justify-center gap-3" type="submit">
+                                Submit Inquiry
+                                <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-black/5 dark:border-white/5 bg-neutral-50 dark:bg-neutral-900">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 w-full px-10 py-24 max-w-[1440px] mx-auto">
+<div class="space-y-8">
+<div class="text-lg font-bold tracking-tighter text-black dark:text-white font-headline">TerraNova</div>
+<p class="text-black/50 dark:text-white/50 max-w-sm font-['Inter'] leading-[1.8] tracking-wide text-sm">
+                    Cultivating the future of premium logistics and sustainable botanical distribution across the European continent.
                 </p>
-            </div>
-        </section>
-
-        <!-- Asymmetric Inquiry Layout -->
-        <section class="max-w-screen-2xl mx-auto px-12 mb-48">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-24 items-start">
-                <!-- Info Column (Asymmetric Offset) -->
-                <div class="lg:col-span-4 space-y-24">
-                    <div class="bg-surface-container-low p-12">
-                        <h3 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-8">Headquarters</h3>
-                        <p class="text-lg leading-snug">TerraNova EU Hub<br/>Amsterdam, Netherlands</p>
-                        <div class="mt-12 space-y-4">
-                            <p class="text-sm font-medium">B2B Priority Line: +31 20 555 0192</p>
-                            <p class="text-sm font-medium">Global Logistics: log@terranova.eu</p>
-                        </div>
-                    </div>
-                    <div class="space-y-6">
-                        <div class="h-[1px] bg-outline-variant/20 w-full"></div>
-                        <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Standard Protocol</p>
-                        <p class="text-sm text-on-surface-variant">Response within one business cycle. All allocations are subject to seasonal availability and quality assurance protocols.</p>
-                    </div>
+<div class="text-black/50 dark:text-white/50 font-['Inter'] leading-[1.8] tracking-wide text-sm">
+                    © 2026 TerraNova Fresh. All rights reserved.
                 </div>
-                <!-- Form Column -->
-                <div class="lg:col-span-8">
-                    <form class="space-y-16" onsubmit="event.preventDefault(); alert('Request sent');">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                            <div class="space-y-4">
-                                <label class="text-[0.75rem] font-bold uppercase tracking-[0.05em] text-on-surface">Full Name</label>
-                                <input class="w-full bg-surface-container border-none focus:ring-0 focus:bg-surface-container-high px-6 py-4 transition-colors" placeholder="Authorized Representative" type="text" required/>
-                            </div>
-                            <div class="space-y-4">
-                                <label class="text-[0.75rem] font-bold uppercase tracking-[0.05em] text-on-surface">Corporate Email</label>
-                                <input class="w-full bg-surface-container border-none focus:ring-0 focus:bg-surface-container-high px-6 py-4 transition-colors" placeholder="name@company.com" type="email" required/>
-                            </div>
-                        </div>
-                        <div class="space-y-4">
-                            <label class="text-[0.75rem] font-bold uppercase tracking-[0.05em] text-on-surface">Inquiry Type</label>
-                            <select class="w-full bg-surface-container border-none focus:ring-0 focus:bg-surface-container-high px-6 py-4 transition-colors appearance-none cursor-pointer">
-                                <option>Import</option>
-                                <option>Export</option>
-                                <option>Partnership</option>
-                            </select>
-                        </div>
-                        <div class="space-y-4">
-                            <label class="text-[0.75rem] font-bold uppercase tracking-[0.05em] text-on-surface">Inventory Requirements</label>
-                            <textarea class="w-full bg-surface-container border-none focus:ring-0 focus:bg-surface-container-high px-6 py-4 transition-colors resize-none" placeholder="Specify volume, frequency, and produce variety..." rows="6"></textarea>
-                        </div>
-                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-8 pt-8 border-t border-outline-variant/10">
-                            <div class="flex items-center space-x-3 text-on-surface-variant">
-                                <span class="material-symbols-outlined text-sm">schedule</span>
-                                <span class="text-xs uppercase tracking-wider">Expectation: Response within one business cycle</span>
-                            </div>
-                            <button type="submit" class="bg-primary text-on-primary px-12 py-5 font-bold uppercase text-xs tracking-widest hover:bg-primary-dim transition-all active:scale-95 shadow-lg shadow-primary/10">
-                                Submit Allocation Request
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Visual Anchor -->
-        <section class="w-full h-[614px] bg-surface-container-low overflow-hidden">
-            <div class="w-full h-full relative">
-                <img class="w-full h-full object-cover opacity-80 grayscale hover:grayscale-0 transition-all duration-1000" data-alt="Modern architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeGvwHFJQ4fDVb_BGzBBImUyS1xMWOsGtHEC27aOknYw802WRqIxKGjBuZ8z91A3tHOAVOD6qMQLNqALmaCJIY3jdZq4JRafdfzPB4DYLweeOxihRqDbJPU9RX_rA-CpeNHFYzle_LdFVwza4NrHJ5yzol9LmTUWuwcEEc8hf29WtygXEMRqKe_7FnYYzy4Lx5-gyr_mAkfps5-4qcFsnbw4XY9d1HZ6TpuYnoKh7ZkKPMvyy0z9EKTN3bmEHgBo3XTARmIxLcpcCc"/>
-                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="w-full py-24 bg-zinc-50 dark:bg-zinc-950">
-        <div class="flex flex-col items-center space-y-8 px-12">
-            <div class="text-sm font-bold text-zinc-900 dark:text-zinc-50 tracking-tighter uppercase">TerraNova</div>
-            <div class="flex space-x-12">
-                <a class="font-inter text-xs tracking-[0.05em] uppercase text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-4 hover:underline transition-all duration-300" href="#">Instagram</a>
-                <a class="font-inter text-xs tracking-[0.05em] uppercase text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-4 hover:underline transition-all duration-300" href="#">LinkedIn</a>
-                <a class="font-inter text-xs tracking-[0.05em] uppercase text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-4 hover:underline transition-all duration-300" href="#">Direct</a>
-            </div>
-            <p class="font-inter text-xs pt-8 border-t border-zinc-200/50 w-full max-w-xs text-center tracking-[0.05em] uppercase text-zinc-400 dark:text-zinc-600">TerraNova. Europe. © 2026</p>
-        </div>
-    </footer>
-    <script src="js/main.js"></script>
-</body>
-</html>
+</div>
+<div class="grid grid-cols-2 gap-10">
+<div class="flex flex-col gap-4">
+<span class="text-xs font-bold uppercase tracking-widest text-black/20 dark:text-white/20">Network</span>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline-offset-4 transition-all font-['Inter'] text-sm" href="#">TerraNova. Europe.</a>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline-offset-4 transition-all font-['Inter'] text-sm" href="#">Logistics Centers</a>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline-offset-4 transition-all font-['Inter'] text-sm" href="#">Compliance</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-xs font-bold uppercase tracking-widest text-black/20 dark:text-white/20">Connect</span>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline-offset-4 transition-all font-['Inter'] text-sm" href="#">Instagram</a>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline-offset-4 transition-all font-['Inter'] text-sm" href="#">LinkedIn</a>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline-offset-4 transition-all font-['Inter'] text-sm" href="#">Direct</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
