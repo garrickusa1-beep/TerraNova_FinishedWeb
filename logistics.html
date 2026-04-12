@@ -1,167 +1,235 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>TerraNova | Logistics</title>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script src="js/tailwind-config.js"></script>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css"/>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TerraNova | Logistics &amp; Origin</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#f0f0f2",
+              "primary-container": "#3b3b3b",
+              "background": "#f9f9fb",
+              "on-secondary": "#ffffff",
+              "primary-fixed": "#5e5e5e",
+              "secondary": "#5f5e60",
+              "secondary-fixed": "#c8c6c8",
+              "error-container": "#ffdad6",
+              "tertiary": "#3a3b40",
+              "tertiary-container": "#747479",
+              "on-secondary-fixed-variant": "#3b3b3d",
+              "surface-variant": "#e2e2e4",
+              "secondary-fixed-dim": "#acaaad",
+              "on-tertiary-fixed-variant": "#e3e2e7",
+              "surface-container-high": "#e8e8ea",
+              "on-primary": "#e2e2e2",
+              "on-primary-container": "#ffffff",
+              "on-tertiary": "#e3e2e7",
+              "on-error-container": "#410002",
+              "secondary-container": "#d6d3d6",
+              "inverse-primary": "#c6c6c6",
+              "inverse-surface": "#2f3132",
+              "on-secondary-fixed": "#1b1b1d",
+              "on-secondary-container": "#1b1b1d",
+              "on-surface": "#1a1c1d",
+              "error": "#ba1a1a",
+              "on-error": "#ffffff",
+              "surface-container-low": "#f3f3f5",
+              "surface-container-highest": "#e2e2e4",
+              "on-background": "#1a1c1d",
+              "surface-dim": "#d9dadc",
+              "surface-tint": "#5e5e5e",
+              "surface": "#f9f9fb",
+              "tertiary-fixed-dim": "#46464b",
+              "surface-container": "#eeeef0",
+              "on-tertiary-container": "#ffffff",
+              "primary-fixed-dim": "#474747",
+              "on-tertiary-fixed": "#ffffff",
+              "on-primary-fixed-variant": "#e2e2e2",
+              "outline": "#777777",
+              "on-primary-fixed": "#ffffff",
+              "primary": "#000000",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#474747",
+              "tertiary-fixed": "#5e5e63",
+              "outline-variant": "#c6c6c6",
+              "surface-bright": "#f9f9fb"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        .vertical-label {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .ghost-border {
+            border: 1px solid rgba(198, 198, 198, 0.15);
+        }
+    </style>
 </head>
-
-<body class="bg-background text-on-surface selection:bg-primary-container">
-    <!-- Top Nav -->
-    <nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-black/70 backdrop-blur-xl">
-        <div class="flex justify-between items-center max-w-screen-2xl mx-auto px-12 py-6">
-            <a href="index.html" class="text-xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50">TerraNova</a>
-            <div class="hidden md:flex flex-row items-center space-x-12">
-                <a class="font-inter tracking-tight font-medium text-[13px] uppercase text-zinc-500 hover:text-zinc-900 transition-colors" href="produce.html">Produce</a>
-                <a class="font-inter tracking-tight font-medium text-[13px] uppercase text-zinc-500 hover:text-zinc-900 transition-colors" href="logistics.html">Logistics</a>
-                <a class="font-inter tracking-tight font-medium text-[13px] uppercase text-zinc-500 hover:text-zinc-900 transition-colors" href="sustainability.html">Sustainability</a>
-                <a class="font-inter tracking-tight font-medium text-[13px] uppercase text-zinc-500 hover:text-zinc-900 transition-colors" href="contact.html">Contact</a>
-            </div>
-            <a href="contact.html" class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-inter text-[12px] uppercase font-bold tracking-widest hover:opacity-70 transition-opacity duration-300 active:scale-95">Inquire</a>
-        </div>
-    </nav>
-
-    <main>
-        <!-- Hero Section -->
-        <section class="min-h-screen flex flex-col items-center justify-center bg-surface-container-lowest px-12 pt-24 pb-48">
-            <div class="max-w-4xl text-center space-y-8">
-                <span class="font-label text-xs tracking-[0.2em] uppercase text-outline">Technical Excellence</span>
-                <h1 class="text-[clamp(3.5rem,10vw,7rem)] font-extrabold tracking-tighter leading-[0.9] text-on-background">
-                    The Science of Freshness.
+<body class="bg-background text-on-background font-body antialiased">
+<!-- Updated Top Navigation Bar based on COMPONENTS_38 -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-[0_40px_40px_-15px_rgba(0,0,0,0.04)] duration-300 ease-in-out">
+<div class="flex justify-between items-center px-10 py-6 w-full max-w-screen-2xl mx-auto font-['Inter'] tracking-tight text-sm font-medium">
+<div class="text-xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50">TerraNova</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors" href="index.html">Home</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors" href="produce.html">Produce</a>
+<a class="text-zinc-900 dark:text-zinc-50 font-bold border-b border-zinc-900 dark:border-zinc-50 pb-1" href="logistics.html">Logistics</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors" href="sustainability.html">Sustainability</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50 cursor-pointer hover:opacity-70 transition-opacity">shopping_cart</span>
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50 cursor-pointer hover:opacity-70 transition-opacity">account_circle</span>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50">menu</span>
+</div>
+</div>
+</div>
+<div class="bg-zinc-100 dark:bg-zinc-800 h-[1px] opacity-20"></div>
+</nav>
+<main class="pt-32">
+<!-- Section 1: Secondary Hero -->
+<section class="px-10 max-w-[1440px] mx-auto mb-[8.5rem]">
+<div class="max-w-4xl ml-0 md:ml-12">
+<h1 class="text-[3.5rem] md:text-[5.5rem] font-bold tracking-tighter leading-none mb-8 text-primary">
+                    PRECISION LOGISTICS FOR FRESH PRODUCE.
                 </h1>
-                <p class="text-on-surface-variant text-xl max-w-2xl mx-auto font-light leading-relaxed tracking-tight">
-                    Engineering nature's timeline through advanced thermal dynamics and predictive logistics.
+<p class="text-xl text-secondary max-w-2xl leading-[1.8]">
+                    We manage the full logistics process to ensure fresh products arrive in optimal conditions.
+                </p><div><br/></div><div>From origin to final delivery, out cold chain systems maintain quality, consistency and compliance with European standards.</div>
+</div>
+</section>
+<!-- Section 2: The Process (Invisible Precision) -->
+<section class="bg-surface-container-low py-32 px-10">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Context & Specimen Viewer -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<div class="mb-12">
+<span class="label-md font-bold tracking-[0.1em] text-primary/40 uppercase block mb-4">Core Philosophy</span>
+<h2 class="text-[2.75rem] font-bold tracking-tight text-primary leading-tight mb-6">Operational Precision.
+                        </h2>
+<p class="text-lg text-secondary leading-relaxed max-w-xl">
+                            We oversee every stage of the journey - from harvest to delivery - ensuring product integrity in maintained throughout transport.</p>
+</div>
+<!-- Specimen Viewer Component -->
+<div class="relative w-full aspect-[16/9] bg-surface-container-highest overflow-hidden rounded-xl ghost-border group">
+<img alt="Logistics technology" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="high-end minimalist photo of a clinical laboratory setting with stainless steel surfaces and soft cool lighting on technical monitoring equipment" src="https://lh3.googleusercontent.com/aida/ADBb0ug2reSBoR0UY1K_bCUAtWq9grY_sDGOu07EdayfE0HFjOj4wh-U-TET0TfJpnDXf1ifZEGxQSotoqiSFMWf8gYAV3jKPu84FX8r-3ankX2qVX_9RnE7HZKJ_Y4Q1e-0Ad7ehF5czBBAM0mqZFvJ6Z3-b9IGdRPBPvNGDP-6b2J_lbvtpvIn5M91XZr_zzUqfyV3VUDc3BGyE8MaWuVP2-fXUqJOoaEkfpYF1AlFcWtiFRRUE5vJ-c8aYyJQr6_NkE8yM_pPwZO4IA"/>
+<div class="absolute right-6 top-1/2 -translate-y-1/2 vertical-label pointer-events-none">
+<span class="text-[0.65rem] uppercase tracking-[0.3em] text-primary/30 font-bold">Ref: TN-LOG-001 / Monitoring Suite</span>
+</div>
+</div>
+</div>
+<!-- Right Column: The Details (Gallery Cards) -->
+<div class="lg:col-span-5 flex flex-col justify-center space-y-10 lg:pl-16">
+<!-- Climate Control -->
+<div class="bg-surface-container-lowest p-12 rounded-xl shadow-[0_40px_40px_rgba(26,28,29,0.04)] transition-all duration-300 hover:-translate-y-1">
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">thermostat</span>
+<div>
+<h3 class="text-xl font-bold mb-3 tracking-tight">Cold Chaing Control.</h3>
+<p class="text-secondary leading-[1.8]">We maintain controlled temperatures throughout the entire supply chain to preserve freshness and product quality.</p>
+</div>
+</div>
+</div>
+<!-- Traceability -->
+<div class="bg-surface-container-lowest p-12 rounded-xl shadow-[0_40px_40px_rgba(26,28,29,0.04)] transition-all duration-300 hover:-translate-y-1">
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">map</span>
+<div>
+<h3 class="text-xl font-bold mb-3 tracking-tight">Full Traceability.</h3>
+<p class="text-secondary leading-[1.8]">Every shipment is monitored and tracked from origin to destination, ensuring transparency and compliance.</p>
+</div>
+</div>
+</div>
+<!-- Efficiency -->
+<div class="bg-surface-container-lowest p-12 rounded-xl shadow-[0_40px_40px_rgba(26,28,29,0.04)] transition-all duration-300 hover:-translate-y-1">
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">speed</span>
+<div>
+<h3 class="text-xl font-bold mb-3 tracking-tight">Efficiency Transport.</h3>
+<p class="text-secondary leading-[1.8]">Optimized logitics routes reduce transit time and ensure consistent delivery across Europe.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Anchor: Map Specimen -->
+<section class="py-32 px-10 max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="order-2 md:order-1">
+<div class="w-full aspect-square bg-surface-container-low rounded-full overflow-hidden ghost-border flex items-center justify-center relative">
+<!-- Abstract Logistics Map Representation -->
+<div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at center, #000 1px, transparent 1px); background-size: 20px 20px;"></div>
+<img alt="Logistics team at container port" class="w-3/4 h-3/4 object-cover rounded-full" data-alt="abstract satellite view of earth at night with glowing blue and white data lines representing global connectivity and movement" src="https://lh3.googleusercontent.com/aida/ADBb0uhkX54St9wx5qS70cNugFJPi7T7SIj4xc5N4awB8DvVYURlNRWcraBpsu9-lMOqfIuF0k6NwjomAynz-yIyw7QRWqTcjoLnlhiOKvAh9ws9f-eQ1Vho962dCyPSFa6qsztIZr-eRhGlv8pWz-k_O_Im2ZqkJlmKoyp3l6XJ4CAaUv9oLpCVeJ9Dlm-i4ze_uRcNNESodI6awQ1kvLYQK3Txebg77fAUdRsbHUWYbyt3XrpQuJK2xmyU6GHImqcokaCkpqpOSsrWQw"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-[120%] h-[1px] bg-primary/10 rotate-45"></div>
+<div class="w-[120%] h-[1px] bg-primary/10 -rotate-45"></div>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<span class="label-md font-bold tracking-[0.1em] text-primary/40 uppercase block mb-4">Global Reach</span>
+<h2 class="text-4xl font-bold tracking-tight text-primary leading-tight mb-8">Origin Without Borders.</h2>
+<p class="text-lg text-secondary leading-[1.8] mb-12">TerraNova operates a frictionless corridor across the European continent. By owning our cold-chain infrastructure, we ensure that the botanical "Origin" isn't just a location on a map—it's a promise of quality.</p>
+<button class="bg-primary text-on-primary px-10 py-5 rounded-md font-bold hover:opacity-90 transition-all flex items-center gap-3 active:scale-95">
+                        Download Logistics Whitepaper
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-black/5 dark:border-white/5 bg-neutral-50 dark:bg-neutral-900">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 w-full px-10 py-24 max-w-[1440px] mx-auto font-['Inter'] leading-[1.8] tracking-wide text-sm">
+<div>
+<div class="text-lg font-bold tracking-tighter text-black dark:text-white mb-6">TerraNova</div>
+<p class="text-black/50 dark:text-white/50 max-w-sm mb-8">
+                    Curating the world's finest botanical produce through scientific precision and ethical logistics.
                 </p>
-            </div>
-        </section>
-
-        <!-- Process Block -->
-        <section class="bg-surface-container-low py-48 px-12">
-            <div class="max-w-screen-2xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-24 items-end">
-                    <div class="md:col-span-7">
-                        <span class="font-label text-xs tracking-[0.2em] uppercase text-outline mb-6 block">Supply Chain Architecture</span>
-                        <h2 class="text-5xl font-bold tracking-tight text-on-background mb-12">Invisible Precision.</h2>
-                        <p class="text-2xl font-light text-on-surface-variant leading-relaxed max-w-xl">
-                            We oversee the journey from the moment of harvest. Every heartbeat of the supply chain is monitored, refined, and optimized to protect the cellular integrity of our produce.
-                        </p>
-                    </div>
-                    <div class="md:col-span-5 aspect-[4/5] bg-surface-container-lowest overflow-hidden">
-                        <img class="w-full h-full object-cover grayscale opacity-90 hover:grayscale-0 transition-all duration-700 cursor-crosshair" data-alt="ultra-modern minimalist laboratory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ58MTqa5kMAy0JmqG1tnrawOdyh8qvOrHWKJQIx_8X-_qj_KKmkXvaLmE7ifdPb3cW9fl6qGd737-LWpFROpJ72wyvELyPw5MF3kyJLC5Wi9ajUyrfFlOJr7rgnR6NVJI4zRvULV4j0k6qNUL_2aC6N1lmR4HVwfOctWFn6uZDT-7wRbF6L8TZ37daaMNPiwwk-9B2H5n9UX1U8aITOd-1krIHbcqbyQQMlrhxCOT8bP4e8lB2t7Ufm4-_j5gwpylZuUmmuZCcfvD"/>
-                    </div>
+<div class="text-black/50 dark:text-white/50">
+                    © 2026 TerraNova Fresh. All rights reserved.
                 </div>
-            </div>
-        </section>
-
-        <!-- Feature Points -->
-        <section class="bg-surface-container-lowest py-48 px-12">
-            <div class="max-w-screen-2xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Climate Control -->
-                    <div class="bg-surface-container-low p-12 flex flex-col justify-between min-h-[400px]">
-                        <div class="space-y-6">
-                            <span class="material-symbols-outlined text-4xl text-primary" data-icon="thermostat">thermostat</span>
-                            <h3 class="text-2xl font-bold tracking-tight">Climate Control.</h3>
-                            <p class="text-on-surface-variant font-light leading-relaxed">
-                                Intelligent monitoring for 100% vitalization. Sensors maintain atmosphere composition to a 0.1% margin of error.
-                            </p>
-                        </div>
-                        <div class="pt-12">
-                            <div class="h-[1px] bg-outline-variant/20 w-full mb-4"></div>
-                            <span class="font-label text-[10px] uppercase tracking-widest text-outline">Thermal Delta: ±0.04°C</span>
-                        </div>
-                    </div>
-                    <!-- Traceability -->
-                    <div class="bg-surface p-12 flex flex-col justify-between min-h-[400px]">
-                        <div class="space-y-6">
-                            <span class="material-symbols-outlined text-4xl text-primary" data-icon="hub">hub</span>
-                            <h3 class="text-2xl font-bold tracking-tight">Traceability.</h3>
-                            <p class="text-on-surface-variant font-light leading-relaxed">
-                                A digital map for every single batch. Scanned at every waypoint to ensure total transparency from field to fork.
-                            </p>
-                        </div>
-                        <div class="relative w-full h-32 overflow-hidden bg-surface-container-high">
-                            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary to-transparent"></div>
-                            <img class="w-full h-full object-cover mix-blend-multiply opacity-40" data-alt="abstract digital mapping" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3kJke53c8fWcT4uHoxaXWRqIXEX-lxMILXI4C6vShxyJaMDP5Vq5GTftKwTJSPIfnvEJOpPjiD2FyqtrBwjYVs1-E3bYWRlLSWwpCth9_p7CSsVsI3zLmdKQMNpkE1oxatPt1PyCkkrgsIa3puogj-88a5hAQLC7Sw48HhkV8wXEPe6TLRw-PZRpMJLU8JJyGEw59IWxw1re7DAp9eKs0eg5rqBD3CQhDMcxzATQbfqDeC6qb7vqds1CG4UNTstJljYxl-RGg53iD"/>
-                        </div>
-                    </div>
-                    <!-- Efficiency -->
-                    <div class="bg-inverse-surface p-12 flex flex-col justify-between min-h-[400px] text-surface-container-lowest">
-                        <div class="space-y-6">
-                            <span class="material-symbols-outlined text-4xl text-primary-fixed-dim" data-icon="bolt">bolt</span>
-                            <h3 class="text-2xl font-bold tracking-tight">Efficiency.</h3>
-                            <p class="text-inverse-on-surface font-light leading-relaxed">
-                                Bypassing traditional delays to prioritize life-span. Direct routes and automated sorting reduce handling time by 40%.
-                            </p>
-                        </div>
-                        <div class="pt-12 text-primary-fixed-dim">
-                            <span class="text-4xl font-black tracking-tighter">4.0x</span>
-                            <p class="font-label text-[10px] uppercase tracking-widest opacity-60">Transit Velocity Factor</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Visualization -->
-        <section class="bg-surface-container-low py-48 px-12 overflow-hidden">
-            <div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-                <div class="space-y-12">
-                    <h2 class="text-6xl font-extrabold tracking-tighter leading-none text-on-background">The Origin <br/>Interface.</h2>
-                    <div class="space-y-8">
-                        <div class="flex items-start gap-6 border-l border-outline-variant/30 pl-8">
-                            <span class="text-outline font-label text-sm">01</span>
-                            <div>
-                                <h4 class="font-bold mb-2">Satellite Verification</h4>
-                                <p class="text-on-surface-variant text-sm font-light">Real-time spectral analysis of soil health and crop maturity prior to harvest selection.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-6 border-l border-outline-variant/30 pl-8">
-                            <span class="text-outline font-label text-sm">02</span>
-                            <div>
-                                <h4 class="font-bold mb-2">Automated Extraction</h4>
-                                <p class="text-on-surface-variant text-sm font-light">Non-invasive harvesting techniques to ensure the produce remains unbruised and structurally intact.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-6 border-l border-outline-variant/30 pl-8">
-                            <span class="text-outline font-label text-sm">03</span>
-                            <div>
-                                <h4 class="font-bold mb-2">Ethylene Scrubbing</h4>
-                                <p class="text-on-surface-variant text-sm font-light">Molecular filtering of the air during transport to pause the natural aging process indefinitely.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="absolute -top-12 -left-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
-                    <div class="bg-surface-container-lowest p-2 shadow-2xl">
-                        <img class="w-full grayscale brightness-110" data-alt="high-tech agricultural logistics facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWDGSv7is5U822tkXL5C97rZc2Lx7eH7H_Nh8XPvlfuEAhiP0t9gYVOzGztsnfTqRzLv5cxN0DFl-fros9vLNy9sdIyQUO50bkmvwx2dbAH8BIk5fZptcvq5EZijv80xhWTDQTTcoURh_mlPM9dS3yyNi9ig6-HO0kXmm4Wf9ZFEBAGy4XxCGcRwg79LuODmNNu-ZlmDMo8hkWNgGjqP46XGYOAuXw34fZWz_aNVKQGTpbkNZtX7-EXHhg_avwBtiIk8J7MMGv2iU_"/>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="w-full py-24 bg-zinc-50 dark:bg-zinc-950">
-        <div class="flex flex-col items-center space-y-8 px-12">
-            <div class="text-sm font-bold text-zinc-900 dark:text-zinc-50 tracking-tighter uppercase">TerraNova</div>
-            <div class="flex space-x-12">
-                <a class="font-inter text-xs tracking-[0.05em] uppercase text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-4 hover:underline transition-all duration-300" href="#">Instagram</a>
-                <a class="font-inter text-xs tracking-[0.05em] uppercase text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-4 hover:underline transition-all duration-300" href="#">LinkedIn</a>
-                <a class="font-inter text-xs tracking-[0.05em] uppercase text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 underline-offset-4 hover:underline transition-all duration-300" href="#">Direct</a>
-            </div>
-            <p class="font-inter text-xs pt-8 border-t border-zinc-200/50 w-full max-w-xs text-center tracking-[0.05em] uppercase text-zinc-400 dark:text-zinc-600">TerraNova. Europe. © 2026</p>
-        </div>
-    </footer>
-    <script src="js/main.js"></script>
-</body>
-</html>
+</div>
+<div class="grid grid-cols-2 gap-10">
+<div class="flex flex-col space-y-4">
+<span class="font-bold text-black dark:text-white">Exploration</span>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all" href="#">TerraNova. Europe.</a>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all" href="#">Instagram</a>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all" href="#">LinkedIn</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-bold text-black dark:text-white">Communication</span>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all" href="#">Direct</a>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all" href="#">Support</a>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all" href="#">Press Kit</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
