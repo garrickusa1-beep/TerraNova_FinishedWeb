@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
         tailwind.config = {
@@ -79,10 +77,6 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .glass-nav {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(20px);
-        }
         .vertical-label {
             writing-mode: vertical-rl;
         }
@@ -90,63 +84,63 @@
             display: none;
         }
     </style>
-</head>
-<body class="bg-background text-on-background font-body antialiased">
+<style type="text/css"></style></head>
+<body class="bg-background text-on-background font-body antialiased pt-[88px]">
 <!-- Shared Navigation -->
-<header class="sticky top-0 z-50 glass-nav border-b border-outline-variant/15 px-6 lg:px-20 py-4">
-<div class="max-w-[1440px] mx-auto flex items-center justify-between">
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-[0_40px_40px_-15px_rgba(0,0,0,0.04)] duration-300 ease-in-out">
+<div class="flex justify-between items-center px-10 py-6 w-full max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-12">
 <div class="flex items-center gap-3">
-<div class="size-6 text-primary">
-<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<div class="size-6 text-zinc-900 dark:text-zinc-50">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
 </svg>
 </div>
-<h2 class="text-primary text-xl font-bold tracking-tight">TerraNova</h2>
+<h2 class="text-xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50" style="">TerraNova</h2>
 </div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-primary text-sm font-medium tracking-wide border-b border-primary pb-0.5" href="#">Catalog</a>
-<a class="text-secondary text-sm font-medium tracking-wide hover:text-primary transition-colors" href="#">Sourcing</a>
-<a class="text-secondary text-sm font-medium tracking-wide hover:text-primary transition-colors" href="#">About</a>
+<nav class="hidden md:flex items-center gap-8 font-['Inter'] tracking-tight text-sm font-medium">
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors" href="#" style="">Home</a>
+<a class="text-zinc-900 dark:text-zinc-50 font-bold border-b border-zinc-900 dark:border-zinc-50 pb-1" href="#" style="">Produce</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors" href="#" style="">Logistics</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors" href="#" style="">Sustainability</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors" href="#" style="">Contact</a>
 </nav>
 </div>
 <div class="flex items-center gap-6">
-<div class="relative hidden sm:block">
-<div class="absolute inset-y-0 left-3 flex items-center pointer-events-none text-secondary">
-<span class="material-symbols-outlined text-[20px]">search</span>
-</div>
-<input class="bg-surface-container-highest/50 border-none rounded-xl pl-10 pr-4 py-2 text-sm focus:ring-1 focus:ring-primary/20 w-64 transition-all" placeholder="Search cultivars..." type="text"/>
-</div>
-<button class="p-2 text-primary hover:bg-surface-container-low rounded-full transition-colors">
-<span class="material-symbols-outlined">shopping_bag</span>
+<div class="flex items-center gap-4 text-zinc-900 dark:text-zinc-50">
+<button class="p-2 hover:opacity-70 transition-opacity" style="">
+<span class="material-symbols-outlined" style="">shopping_cart</span>
+</button>
+<button class="p-2 hover:opacity-70 transition-opacity" style="">
+<span class="material-symbols-outlined" style="">account_circle</span>
 </button>
 </div>
 </div>
+</div>
+<div class="bg-zinc-100 dark:bg-zinc-800 h-[1px] opacity-20"></div>
 </header>
 <main class="flex flex-col">
 <!-- Section 1: Secondary Hero -->
 <section class="relative px-6 lg:px-20 pt-24 pb-32 flex flex-col items-center text-center">
-<span class="label-md uppercase tracking-[0.2em] text-secondary mb-8 block">Volume IV — Seasonal Selection</span>
-<h1 class="text-[clamp(3rem,8vw,5.5rem)] font-bold tracking-[-0.03em] leading-[0.9] text-primary max-w-5xl">
-                The Curated Collection.
-            </h1>
+<span class="label-md uppercase tracking-[0.2em] text-secondary mb-8 block" style="">Seasonal Selection</span>
+<h1 class="text-[clamp(3rem,8vw,5.5rem)] font-bold tracking-[-0.03em] leading-[0.9] text-primary max-w-5xl" style="">
+                OUR PRODUCT RANGE</h1>
 </section>
 <!-- Section 2: Categories Introduction -->
 <section class="px-6 lg:px-20 py-24 bg-surface-container-low">
 <div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
 <div class="lg:col-span-7">
-<h2 class="text-headline-lg font-bold text-primary mb-6">Botanical Excellence.</h2>
-<p class="text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-                        Our portfolio is defined by the seasons and driven by quality. Each specimen is hand-selected from our global network of artisanal growers, ensuring that every delivery is a testament to the earth's purest potential.
-                    </p>
+<h2 class="text-headline-lg font-bold text-primary mb-6" style="">Fresh Products. Global Sourcing</h2>
+<p class="text-body-lg text-on-surface-variant max-w-2xl leading-relaxed" style="">
+                        We supply a wide range of fresh fruits and vegetables sourced from trusted growers worldwide.<div><br></div><div>Our portfolio is designed to meet the needs of importers, distributors and retailers across Europe.</div></p>
 </div>
 <div class="lg:col-span-5 flex justify-end">
 <div class="flex gap-4">
-<button class="size-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
-<span class="material-symbols-outlined">west</span>
+<button class="size-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" style="">
+<span class="material-symbols-outlined" style="">west</span>
 </button>
-<button class="size-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
-<span class="material-symbols-outlined">east</span>
+<button class="size-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" style="">
+<span class="material-symbols-outlined" style="">east</span>
 </button>
 </div>
 </div>
@@ -158,78 +152,68 @@
 <!-- Specimen 1: Essential Greens -->
 <div class="flex flex-col group">
 <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-10 transition-transform duration-700 group-hover:scale-[1.02]">
-<img alt="Fresh leafy greens" class="w-full h-full object-cover" data-alt="Close-up of vibrant green kale and spinach leaves with dew drops against a neutral grey minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8d72S79E4zrRltmOqPTtXyErir8dPPDOG1mlbf2pUrpI6hvlSQLUqBJlx_UEmAJPsaM7WSdSHK6RtTypGFGSCXxKXvK27p9tFwqJJl1f9Rfk7dD7Xl5zwFkzxV4lK3JP2jPFvjADhk-o6Oz5C87nqrhkaiyVvYd1v2WfFN1voF2GZH5Nq2NCXZ12bSA4ib3DWEkMQGN01ix_DBSCLRj0Jnvq0JUcpR5P5bxGdwD3lZo64NqCOeRZNG9rg2DH0iMuueyd_Klu-3Ds"/>
+<img alt="Fresh leafy greens" class="w-full h-full object-cover" data-alt="Close-up of vibrant green kale and spinach leaves with dew drops against a neutral grey minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8d72S79E4zrRltmOqPTtXyErir8dPPDOG1mlbf2pUrpI6hvlSQLUqBJlx_UEmAJPsaM7WSdSHK6RtTypGFGSCXxKXvK27p9tFwqJJl1f9Rfk7dD7Xl5zwFkzxV4lK3JP2jPFvjADhk-o6Oz5C87nqrhkaiyVvYd1v2WfFN1voF2GZH5Nq2NCXZ12bSA4ib3DWEkMQGN01ix_DBSCLRj0Jnvq0JUcpR5P5bxGdwD3lZo64NqCOeRZNG9rg2DH0iMuueyd_Klu-3Ds" style="">
 <div class="absolute top-8 right-8 vertical-label">
-<span class="text-[0.65rem] uppercase tracking-widest text-primary font-bold bg-white/90 backdrop-blur px-2 py-4 rounded-full border border-outline-variant/20">
-                                Spring 2024
-                            </span>
+<span class="text-[0.65rem] uppercase tracking-widest text-primary font-bold bg-white/90 backdrop-blur px-2 py-4 rounded-full border border-outline-variant/20" style="">asian vegetables<br></span>
 </div>
 </div>
 <div class="flex flex-col">
 <div class="flex items-center justify-between mb-4">
-<h3 class="text-2xl font-bold tracking-tight text-primary">Essential Greens.</h3>
-<span class="text-sm font-medium text-secondary">Starting at $24.00</span>
+<h3 class="text-2xl font-bold tracking-tight text-primary" style="">Asian Vegetables.</h3>
+<span class="text-sm font-medium text-secondary" style=""><br></span>
 </div>
 <div class="flex flex-wrap gap-2 mb-6">
-<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary">Crisp</span>
-<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary">Vibrant</span>
-<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary">Untouched</span>
+<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary" style=""><br></span>
+<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary" style=""><br></span>
+<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary" style=""><br></span>
 </div>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-8">
-                            A curated selection of the season's finest brassicas and lettuces, harvested at the precise peak of nutritional density.
-                        </p>
-<a class="text-primary font-bold text-sm tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
-                            Explore Cultivars <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8" style="">
+                            Specialized varieties incluing eggplant, karela, long beans and more.</p>
+<a class="text-primary font-bold text-sm tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all" href="#" style="">
+                            Explore&nbsp;<span class="material-symbols-outlined text-[18px]" style="">arrow_forward</span>
 </a>
 </div>
 </div>
 <!-- Specimen 2: Vibrant Roots -->
 <div class="flex flex-col group pt-0 lg:pt-20">
 <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-10 transition-transform duration-700 group-hover:scale-[1.02]">
-<img alt="Heirloom carrots and root vegetables" class="w-full h-full object-cover" data-alt="Artistic arrangement of heirloom carrots with soil details and earthy tones on a white gallery plinth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtKT0j_JKKT_E-FrUIWgfgxqFG7iKXit1tCslMd9gBUbdb9qQkNSz18VlXwIIfu6TIcukXbzsRyUEGTE2OygkaEYkF-dFDAY3PrWJkNjXMNz-hSuC-ANP_RDjdvtpKeqM-BcMhnLw6yUvyQVR1fUUqDYGBoidmcF6XxDyCzHXC1onCTG2DqxfpDm7HbTquO-MYLDvKtxEBP9T0DAwChO_LctZ_c4WEkWxpYLS3nUVkmVhoj7TQFF5i2TLprHvRlRFw8AxxV3GGYpE"/>
+<img alt="Heirloom carrots and root vegetables" class="w-full h-full object-cover" data-alt="Artistic arrangement of heirloom carrots with soil details and earthy tones on a white gallery plinth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtKT0j_JKKT_E-FrUIWgfgxqFG7iKXit1tCslMd9gBUbdb9qQkNSz18VlXwIIfu6TIcukXbzsRyUEGTE2OygkaEYkF-dFDAY3PrWJkNjXMNz-hSuC-ANP_RDjdvtpKeqM-BcMhnLw6yUvyQVR1fUUqDYGBoidmcF6XxDyCzHXC1onCTG2DqxfpDm7HbTquO-MYLDvKtxEBP9T0DAwChO_LctZ_c4WEkWxpYLS3nUVkmVhoj7TQFF5i2TLprHvRlRFw8AxxV3GGYpE" style="">
 <div class="absolute top-8 right-8 vertical-label">
-<span class="text-[0.65rem] uppercase tracking-widest text-primary font-bold bg-white/90 backdrop-blur px-2 py-4 rounded-full border border-outline-variant/20">
-                                Limited Yield
-                            </span>
+<span class="text-[0.65rem] uppercase tracking-widest text-primary font-bold bg-white/90 backdrop-blur px-2 py-4 rounded-full border border-outline-variant/20" style="">Peppers &amp; Chillies<br></span>
 </div>
 </div>
 <div class="flex flex-col">
 <div class="flex items-center justify-between mb-4">
-<h3 class="text-2xl font-bold tracking-tight text-primary">Vibrant Roots.</h3>
-<span class="text-sm font-medium text-secondary">Starting at $32.00</span>
+<h3 class="text-2xl font-bold tracking-tight text-primary" style="">Peppers &amp; Chillies.</h3>
+<span class="text-sm font-medium text-secondary" style=""><br></span>
 </div>
 <div class="flex flex-wrap gap-2 mb-6">
-<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary">Earthy depth</span>
-<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary">Supreme texture</span>
+<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary" style=""><br></span>
+<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary" style=""><br></span>
 </div>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-8">
-                            Unearthing the deep, mineral-rich flavors of forgotten heirloom varieties. These roots carry the signature of their terroir.
-                        </p>
-<a class="text-primary font-bold text-sm tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
-                            View Varieties <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8" style="">
+                            A wide range of hot and specialty peppers for international markets.</p>
+<a class="text-primary font-bold text-sm tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all" href="#" style="">explore&nbsp;<span class="material-symbols-outlined text-[18px]" style="">arrow_forward</span>
 </a>
 </div>
 </div>
 <!-- Specimen 3: Seasonal Exotics -->
 <div class="flex flex-col group pt-0 lg:pt-40">
 <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-10 transition-transform duration-700 group-hover:scale-[1.02]">
-<img alt="Dragon fruit and exotic tropicals" class="w-full h-full object-cover" data-alt="Hyper-detailed shot of sliced pitaya and mangosteen with vibrant pinks and whites under dramatic studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd3E5ayLVtMstXwQyVn9rsrkDBjCMPmSI1bTB4KO8tH9AtU0SUo-_6F7l6QPaWCz4H2Tt8fmxc7tD7m23UdguuqzJI8d2Tug4dwn6jSvkwfxz1Ry4Bce7n69Y_aEFpf-seC7ADrOCSry_EuxYNdVu2yoliVJasmZ7UF2RNnuKHurv14VTvYsKtBPQzyx6dt1xE4i4Cdki3YHpleBCX7JVFyuGDp0M7cWALrjtcS-veVFiAzPsoR4_YkW-AxBCzyXgNVWLzhAWTBT0"/>
+<img alt="Dragon fruit and exotic tropicals" class="w-full h-full object-cover" data-alt="Hyper-detailed shot of sliced pitaya and mangosteen with vibrant pinks and whites under dramatic studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd3E5ayLVtMstXwQyVn9rsrkDBjCMPmSI1bTB4KO8tH9AtU0SUo-_6F7l6QPaWCz4H2Tt8fmxc7tD7m23UdguuqzJI8d2Tug4dwn6jSvkwfxz1Ry4Bce7n69Y_aEFpf-seC7ADrOCSry_EuxYNdVu2yoliVJasmZ7UF2RNnuKHurv14VTvYsKtBPQzyx6dt1xE4i4Cdki3YHpleBCX7JVFyuGDp0M7cWALrjtcS-veVFiAzPsoR4_YkW-AxBCzyXgNVWLzhAWTBT0" style="">
 <div class="absolute top-8 right-8 vertical-label">
-<span class="text-[0.65rem] uppercase tracking-widest text-primary font-bold bg-white/90 backdrop-blur px-2 py-4 rounded-full border border-outline-variant/20">
-                                Rare Import
-                            </span>
+<span class="text-[0.65rem] uppercase tracking-widest text-primary font-bold bg-white/90 backdrop-blur px-2 py-4 rounded-full border border-outline-variant/20" style="">Tropical &amp; Exotic<br></span>
 </div>
 </div>
 <div class="flex flex-col">
 <div class="flex items-center justify-between mb-4">
-<h3 class="text-2xl font-bold tracking-tight text-primary">Seasonal Exotics.</h3>
-<span class="text-sm font-medium text-secondary">Custom Pricing</span>
+<h3 class="text-2xl font-bold tracking-tight text-primary" style="">Tropical &amp; Exotics Products.</h3>
+<span class="text-sm font-medium text-secondary" style=""><br></span>
 </div>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-8">
-                            The world’s rarest flavors, imported with care. From high-altitude berries to tropical wonders, curated for the adventurous palate.
-                        </p>
-<a class="text-primary font-bold text-sm tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
-                            Request Portfolio <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8" style="">
+                            Yam, tropical fruts and seasonal imports from Africa, Latin America and Asia.</p>
+<a class="text-primary font-bold text-sm tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all" href="#" style="">
+                            Request Portfolio <span class="material-symbols-outlined text-[18px]" style="">arrow_forward</span>
 </a>
 </div>
 </div>
@@ -241,40 +225,40 @@
 <div class="md:col-span-2">
 <div class="flex items-center gap-3 mb-8">
 <div class="size-6 text-primary">
-<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
 </svg>
 </div>
-<h2 class="text-primary text-xl font-bold tracking-tight">TerraNova</h2>
+<h2 class="text-primary text-xl font-bold tracking-tight" style="">TerraNova</h2>
 </div>
-<p class="text-secondary max-w-sm text-sm leading-relaxed">
+<p class="text-secondary max-w-sm text-sm leading-relaxed" style="">
                         Curating the Earth's finest produce for those who demand uncompromising quality. Born from nature, refined by expertise.
                     </p>
 </div>
 <div>
-<h4 class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6">Navigation</h4>
+<h4 class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6" style="">Navigation</h4>
 <ul class="flex flex-col gap-4 text-sm text-on-surface-variant">
-<li><a class="hover:text-primary transition-colors" href="#">Catalog</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Global Sourcing</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Our Ethos</a></li>
-<li><a class="hover:text-primary transition-colors" href="logistics.html">Logistics</a></li>
+<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Catalog</a></li>
+<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Global Sourcing</a></li>
+<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Our Ethos</a></li>
+<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Logistics</a></li>
 </ul>
 </div>
 <div>
-<h4 class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6">Inquiries</h4>
+<h4 class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6" style="">Inquiries</h4>
 <ul class="flex flex-col gap-4 text-sm text-on-surface-variant">
-<li><a class="hover:text-primary transition-colors" href="#">Wholesale Portfolio</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Private Events</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Contact Curator</a></li>
+<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Wholesale Portfolio</a></li>
+<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Private Events</a></li>
+<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Contact Curator</a></li>
 </ul>
 </div>
 </div>
 <div class="max-w-[1440px] mx-auto mt-24 pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6">
-<span class="text-[0.7rem] uppercase tracking-widest text-secondary">© 2024 TerraNova Produce. All Rights Reserved.</span>
+<span class="text-[0.7rem] uppercase tracking-widest text-secondary" style="">© 2024 TerraNova Produce. All Rights Reserved.</span>
 <div class="flex gap-8">
-<a class="text-[0.7rem] uppercase tracking-widest text-secondary hover:text-primary transition-colors" href="#">Privacy</a>
-<a class="text-[0.7rem] uppercase tracking-widest text-secondary hover:text-primary transition-colors" href="#">Terms</a>
-<a class="text-[0.7rem] uppercase tracking-widest text-secondary hover:text-primary transition-colors" href="#">Sustain</a>
+<a class="text-[0.7rem] uppercase tracking-widest text-secondary hover:text-primary transition-colors" href="#" style="">Privacy</a>
+<a class="text-[0.7rem] uppercase tracking-widest text-secondary hover:text-primary transition-colors" href="#" style="">Terms</a>
+<a class="text-[0.7rem] uppercase tracking-widest text-secondary hover:text-primary transition-colors" href="#" style="">Sustain</a>
 </div>
 </div>
 </footer>
