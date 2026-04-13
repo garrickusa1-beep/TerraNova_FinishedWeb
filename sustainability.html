@@ -1,222 +1,292 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>TerraNova | Sustainability</title>
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><style type="text/css"></style>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
-            colors: {
-              "inverse-on-surface": "#f0f0f2",
-              "primary-container": "#3b3b3b",
-              "background": "#f9f9fb",
-              "on-secondary": "#ffffff",
-              "primary-fixed": "#5e5e5e",
-              "secondary": "#5f5e60",
-              "secondary-fixed": "#c8c6c8",
-              "error-container": "#ffdad6",
-              "tertiary": "#3a3b40",
-              "tertiary-container": "#747479",
-              "on-secondary-fixed-variant": "#3b3b3d",
-              "surface-variant": "#e2e2e4",
-              "secondary-fixed-dim": "#acaaad",
-              "on-tertiary-fixed-variant": "#e3e2e7",
-              "surface-container-high": "#e8e8ea",
-              "on-primary": "#e2e2e2",
-              "on-primary-container": "#ffffff",
-              "on-tertiary": "#e3e2e7",
-              "on-error-container": "#410002",
-              "secondary-container": "#d6d3d6",
-              "inverse-primary": "#c6c6c6",
-              "inverse-surface": "#2f3132",
-              "on-secondary-fixed": "#1b1b1d",
-              "on-secondary-container": "#1b1b1d",
-              "on-surface": "#1a1c1d",
-              "error": "#ba1a1a",
-              "on-error": "#ffffff",
-              "surface-container-low": "#f3f3f5",
-              "surface-container-highest": "#e2e2e4",
-              "on-background": "#1a1c1d",
-              "surface-dim": "#d9dadc",
-              "surface-tint": "#5e5e5e",
-              "surface": "#f9f9fb",
-              "tertiary-fixed-dim": "#46464b",
-              "surface-container": "#eeeef0",
-              "on-tertiary-container": "#ffffff",
-              "primary-fixed-dim": "#474747",
-              "on-tertiary-fixed": "#ffffff",
-              "on-primary-fixed-variant": "#e2e2e2",
-              "outline": "#777777",
-              "on-primary-fixed": "#ffffff",
-              "primary": "#000000",
-              "surface-container-lowest": "#ffffff",
-              "on-surface-variant": "#474747",
-              "tertiary-fixed": "#5e5e63",
-              "outline-variant": "#c6c6c6",
-              "surface-bright": "#f9f9fb"
+            "colors": {
+                    "surface-container-low": "#f4f4f2",
+                    "on-secondary-fixed-variant": "#474746",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6",
+                    "on-background": "#1a1c1b",
+                    "secondary-container": "#e2dfde",
+                    "outline": "#75786f",
+                    "surface-tint": "#55624a",
+                    "on-primary-fixed": "#131f0c",
+                    "outline-variant": "#c5c8bd",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-primary-fixed-variant": "#3e4a34",
+                    "on-secondary-container": "#636262",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "primary-fixed-dim": "#bdcbae",
+                    "surface-dim": "#dadad8",
+                    "primary-fixed": "#d9e7c9",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f9f9f7",
+                    "on-surface": "#1a1c1b",
+                    "tertiary-fixed-dim": "#dfbdcd",
+                    "secondary": "#5f5e5e",
+                    "on-surface-variant": "#454840",
+                    "surface": "#f9f9f7",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#f9f9f7",
+                    "on-tertiary-fixed-variant": "#58404c",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#2f1a25",
+                    "primary": "#182310",
+                    "surface-container": "#eeeeec",
+                    "primary-container": "#2d3924",
+                    "surface-container-high": "#e8e8e6",
+                    "on-tertiary-container": "#b596a5",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e2e3e1",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#291520",
+                    "on-primary-container": "#95a387",
+                    "tertiary-container": "#462f3b",
+                    "tertiary-fixed": "#fcd9e9",
+                    "inverse-primary": "#bdcbae",
+                    "inverse-on-surface": "#f1f1ef",
+                    "inverse-surface": "#2f3130",
+                    "surface-container-highest": "#e2e3e1",
+                    "brand-green": "#2b6b21",
+                    "brand-orange": "#e85d24",
+                    "brand-gold": "#f4c430"
             },
-            fontFamily: {
-              "headline": ["Inter"],
-              "body": ["Inter"],
-              "label": ["Inter"]
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
             },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
           },
         },
       }
     </script>
 <style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-      }
-      .tonal-shift { background-color: #f3f3f5; }
-      body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .bg-lines {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.15;
+        }
     </style>
-<style type="text/css"></style></head>
-<body class="bg-background text-on-surface font-body">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-xl border-none shadow-[0_40px_40px_rgba(26,28,29,0.04)]">
-<div class="flex justify-between items-center w-full px-10 py-6 max-w-[1440px] mx-auto font-['Inter'] tracking-tight antialiased">
-<a class="text-2xl font-bold tracking-tighter text-black dark:text-white active:scale-95 transition-transform" href="#" style="">TerraNova</a>
-<div class="hidden md:flex space-x-10 items-center">
-<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors hover:opacity-70" href="#" style="">Home</a>
-<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors hover:opacity-70" href="#" style="">Produce</a>
-<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors hover:opacity-70" href="#" style="">Logistics</a>
-<a class="text-black dark:text-white font-bold border-b-2 border-black dark:border-white pb-1 hover:opacity-70" href="#" style="">Sustainability</a>
-<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors hover:opacity-70" href="#" style="">Contact</a>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed relative">
+<!-- Background Waves -->
+<div class="bg-lines overflow-hidden">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
+<path d="M-100,200 C200,100 400,300 720,200 C1040,100 1240,300 1540,200" fill="none" stroke="#2b6b21" stroke-width="0.5"></path>
+<path d="M-100,400 C250,350 450,550 720,450 C990,350 1190,550 1540,450" fill="none" stroke="#e85d24" stroke-width="0.5"></path>
+<path d="M-100,600 C300,500 500,700 720,600 C940,500 1140,700 1540,600" fill="none" stroke="#f4c430" stroke-width="0.5"></path>
+<path d="M-100,150 C150,250 350,50 720,150 C1090,250 1290,50 1540,150" fill="none" stroke="#2b6b21" stroke-dasharray="2,4" stroke-width="0.3"></path>
+</svg>
+</div>
+<!-- Top Navigation Bar -->
+<header class="bg-[#f9f9f7]/80 dark:bg-[#182310]/80 docked full-width top-0 z-50 sticky backdrop-blur-[20px]">
+<nav class="flex justify-between items-center w-full px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif tracking-tighter text-[#182310] dark:text-[#f9f9f7] flex items-center gap-2">
+<a class="hover:opacity-80 transition-opacity flex items-center" href="#">
+<span class="text-brand-green">Terra</span><span class="text-brand-orange">Nova</span>
+</a>
+</div>
+<div class="hidden md:flex items-center gap-12"><a class="text-[#2d3924]/60 dark:text-[#f9f9f7]/60 hover:text-[#182310] dark:hover:text-white transition-colors duration-300 ease-in-out font-body text-base" href="index.html" style="">Home</a>
+<a class="text-[#2d3924]/60 dark:text-[#f9f9f7]/60 hover:text-[#182310] dark:hover:text-white transition-colors duration-300 ease-in-out font-body text-base" href="produce.html" style="">Products</a>
+<a class="text-[#2d3924]/60 dark:text-[#f9f9f7]/60 hover:text-[#182310] dark:hover:text-white transition-colors duration-300 ease-in-out font-body text-base" href="logistics.html" style="">Logistics</a>
+<a class="text-[#182310] dark:text-white border-b-2 border-brand-green pb-1 font-body text-base" href="sustainability.html" style="">Sustainability</a>
+<a class="text-[#2d3924]/60 dark:text-[#f9f9f7]/60 hover:text-[#182310] dark:hover:text-white transition-colors duration-300 ease-in-out font-body text-base" href="about.html" style="">About</a>
 </div>
 <div class="flex items-center gap-6">
-<button class="material-symbols-outlined text-black dark:text-white text-2xl" data-icon="search" style="">search</button>
-<button class="material-symbols-outlined text-black dark:text-white text-2xl" data-icon="menu" style="">menu</button>
-</div>
+<button class="text-[#2d3924]/60 hover:text-[#182310] transition-colors duration-300 font-label text-xs uppercase tracking-widest" style="">Contact</button>
+<button class="bg-primary text-white px-8 py-3 font-label text-xs uppercase tracking-widest transition-colors duration-300 hover:bg-brand-green" style="">Request Supply</button>
 </div>
 </nav>
-<main class="pt-32">
-<!-- Section 1: Secondary Hero -->
-<section class="px-10 py-24 md:py-48 max-w-[1440px] mx-auto text-center md:text-left">
-<h1 class="text-[clamp(4rem,15vw,10rem)] font-bold tracking-tighter leading-none text-primary uppercase" style="">sustainable delivery.
-            </h1>
-<div class="mt-12 flex flex-col md:flex-row md:items-end justify-between gap-8">
-<p class="text-xl md:text-2xl font-light text-on-surface-variant max-w-2xl leading-relaxed" style="">
-                    We integrate sustainable practices across our sourcing, logistics and distribution processes.
-                </p><div><br></div><div class="" style="">From responsible farming partnerships to efficient transport systems, we ensure our operations meet modern environment standards.</div><p class="" style=""></p>
-<div class="flex items-center gap-4">
-<span class="label-md uppercase tracking-widest text-outline" style="">Since 2025</span>
-<div class="h-px w-24 bg-outline-variant/30"></div>
+</header>
+<main class="min-h-screen relative z-10">
+<!-- Hero Section -->
+<section class="px-12 pt-24 pb-32 max-w-screen-2xl mx-auto grid grid-cols-12 gap-8 items-end">
+<div class="col-span-12 md:col-span-8">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-brand-green mb-6 block" style="">Our Commitment</span>
+<h1 class="text-6xl md:text-8xl font-serif leading-[1.1] tracking-tighter text-primary" style="">
+                    Responsible Sourcing.<br/>Reliable Supply.</h1>
 </div>
-</div>
-</section>
-<!-- Image Break: Specimen Viewer -->
-<section class="w-full px-10 pb-24 md:pb-48">
-<div class="relative w-full aspect-[21/9] overflow-hidden rounded-xl bg-surface-container-low group">
-<img alt="Vast sunlit valley with rolling hills and distant mountains under a cloudy sky" class="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-700" data-alt="wide panoramic shot of a golden sunlit valley at dusk, showing a patchwork of fields and dry vegetation surrounded by rugged hills under a soft blue and orange sky" src="https://lh3.googleusercontent.com/aida/ADBb0uj4MgchkzAN2HkDFjaEYv6z3CQ2So5BmrpJZXB3UZLtc0T-Iurdf_C9lohkZH56rEMim5HzOKC12ML1n4osJaekPEIkWRLi-0dm4ykXS1eClew1rNmcjGz1Jk4MLV4ElYPgYc9z6bN-PqUwhz0ew4SiEMdJdnXNlY4ZpnlEUme5jEa0Z8Eq6B-yisMleULwBYu1dsmo-U7NR6Fty0ZYKR-3P07gcoiPHlcFSgYLEPVe14HcrJ5wJapbpszhKk3Tx-8XD9Y2ZB7A4w" style="">
-<div class="absolute bottom-10 left-10 text-white">
-<span class="text-xs uppercase tracking-[0.2em] font-medium opacity-80" style="">Sustainable sourcing at scale<br></span>
-</div>
-<!-- Vertical Gallery Plaque -->
-<div class="absolute top-10 right-4 md:right-10 transform rotate-90 origin-right">
-<span class="text-[0.65rem] uppercase tracking-[0.3em] text-white/60 whitespace-nowrap" style="">Specimen No. 42 — High Altitude Preservation</span>
-</div>
+<div class="col-span-12 md:col-span-4 pb-4">
+<p class="font-body text-lg leading-relaxed text-on-surface-variant max-w-sm" style="">
+                    We work with trusted partners to ensure responsible sourcing, efficient logistics and consistent product quality.</p>
 </div>
 </section>
-<!-- Section 2: Commitment (Block: Respect for the soil.) -->
-<section class="px-10 pb-48 max-w-[1440px] mx-auto">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-20">
-<div class="lg:col-span-5">
-<span class="label-md uppercase tracking-[0.2em] text-outline mb-6 block" style="">Our APPROACH</span>
-<h2 class="text-5xl md:text-6xl font-bold tracking-tight text-primary leading-tight mb-8" style="">
-                        Respecting Origin.
-                    <div>Ensuring Quality.</div></h2>
-<p class="text-2xl font-light text-on-surface italic border-l-2 border-primary pl-8 py-2" style="">
-                        "Sustainable practices are essential to maintaining consistent,&nbsp;<div>high-quality supply."
-                    </div></p>
-</div>
-<div class="lg:col-span-7 flex flex-col gap-16">
-<!-- Commitment Item 1 -->
-<div class="group flex flex-col md:flex-row gap-8 items-start">
-<div class="flex-shrink-0 w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-2xl" data-icon="eco" style="">eco</span>
-</div>
-<div class="flex-1">
-<h3 class="text-2xl font-bold mb-4" style="">Waste Reduction</h3>
-<p class="text-lg text-on-surface-variant leading-relaxed font-light" style="">
-                                We optimize supply chains to minimize waste at every stage, from harvest to delivery.</p>
+<!-- Environmental Awareness (Asymmetric Layout) -->
+<section class="bg-surface-container-low/40 backdrop-blur-sm py-32 border-y border-outline-variant/10">
+<div class="max-w-screen-2xl mx-auto px-12 grid grid-cols-12 gap-16 items-center">
+<div class="col-span-12 md:col-span-5 relative">
+<img class="w-full aspect-[4/5] object-cover grayscale-[20%]" data-alt="Minimalist landscape of a misty evergreen forest with muted green tones and soft natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGfnyXPW2xNd_PPmVTCNlmoMBCjng28YfG76s8_jusRxrNxuLZSxbIrs8fPM7jm2cgtOUI7r796LWwdC9c3i_asX_PLtHup-6FSeuTUH4-gyhFCMewMgcIMZYWUWKC7X0dSWtUQB5lfF0_P2TxMr0ohJUPx3KBhf1Xlg4TSdBuAVrQvtqxSvfS_2CRiYeujS4UMi26hYazsUfwm3YL8-8sHXEd0d4Bg0Mg6kdQTSL6hjTRiHiF4cildgv1BxfAAc1MfHsdFVnVLZ0" style=""/>
+<div class="absolute -bottom-8 -right-8 bg-surface-container-lowest p-12 hidden lg:block border border-outline-variant/20 shadow-sm">
+<span class="font-label text-[10px] uppercase tracking-widest text-brand-orange block mb-2" style="">Principle 01</span>
+<div class="font-serif text-4xl text-primary" style="">Responsible</div>
+<div class="font-body text-xs text-on-surface-variant uppercase tracking-tighter" style="">Farming practices</div>
 </div>
 </div>
-<!-- Commitment Item 2 -->
-<div class="group flex flex-col md:flex-row gap-8 items-start">
-<div class="flex-shrink-0 w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-2xl" data-icon="air" style="">air</span>
-</div>
-<div class="flex-1">
-<h3 class="text-2xl font-bold mb-4" style="">Efficient Logistics</h3>
-<p class="text-lg text-on-surface-variant leading-relaxed font-light" style="">
-                                We reduce enviromental impact through optimized transport routes and modern logistics systems.</p>
-</div>
-</div>
-<!-- Commitment Item 3 -->
-<div class="group flex flex-col md:flex-row gap-8 items-start">
-<div class="flex-shrink-0 w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-2xl" data-icon="handshake" style="">handshake</span>
-</div>
-<div class="flex-1">
-<h3 class="text-2xl font-bold mb-4" style="">Responsible Sourcing</h3>
-<p class="text-lg text-on-surface-variant leading-relaxed font-light" style="">
-                                We partner with growers who follow sustainable and ethical agricultural practices.</p>
-</div>
+<div class="col-span-12 md:col-span-6 md:col-start-7">
+<h2 class="text-4xl font-serif text-primary mb-8 leading-tight" style="">Environmental Stewardship</h2>
+<div class="space-y-8 font-body text-lg text-on-surface-variant leading-relaxed">
+<p class="" style="">
+                            We work with growers who follow responsible farming practices, focusing on soil health, resource efficiency and long-term sustainability.</p>
+<p class="border-l-2 border-brand-gold pl-6 italic" style="">
+                            "Nature is not a resource to be exhausted, but a legacy to be curated."
+</p>
 </div>
 </div>
 </div>
 </section>
-<!-- Visual Bento Grid Section -->
-<section class="px-10 pb-48 max-w-[1440px] mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-[800px]">
-<div class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-xl bg-surface-container-low">
-<img alt="Extreme close up of healthy soil and a sprout" class="w-full h-full object-cover" data-alt="extreme macro photograph of a tiny bright green sprout emerging from dark nutrient-rich moist soil with soft sunlight bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg7N1CUTjDePY3R_-Kho48sniQ3yV0rBOfSCVhg-GlBc4k_IFXhAvkp7VzSgHg4UYMWVBGRp41FrYIVhj3qta-hmaTo0TVB5rX273NXTOpsw_9zYJsU5cBbMisBwTsU05thsz3LwS4z1HHjsH47Aik1sJaYmyFB20A_eOGxQJLN0GDHBFef5IUfCKo1QAYuaq9v9_JEb1rBM2vsFgHZXN1u5ZRt5AneleZAzhap3dyWkPzIn_zyjoN5_6VwOf5JFp_mM9qkBQEYu0" style="">
-<div class="absolute inset-0 bg-black/10"></div>
+<!-- Efficient Transport (The Ledger Style) -->
+<section class="py-32 px-12 max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-end mb-20">
+<div class="max-w-2xl">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-brand-orange mb-6 block" style="">Infrastructure</span>
+<h2 class="text-4xl font-serif text-primary" style="">Efficient Logistics<div><br/></div><div class="text-2xl font-light text-on-surface-variant">We optimize transport routes and logistics processes to reduce transit times and improve overall efficiency.</div></h2>
 </div>
-<div class="md:col-span-2 md:row-span-1 relative overflow-hidden rounded-xl bg-surface-container-low">
-<img alt="Vast agricultural landscape with clean modern design" class="w-full h-full object-cover grayscale" data-alt="minimalist landscape of rolling green hills and geometric crop fields under a clear sky with high contrast and sharp focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1tR-7M7Wr-LNIcqX9N7gS_YeSjV6cxIBZToR8lgwYQ6QX8jWElamH6EvO4Zd48zLDGxPEIaIBqC4eUv2kpqYKZ_5TNtTI1XQ8z9Z9w8Y7X170aIwPTxeQ-zoC8F1xCFlDN-hV8sXkZTCKt-m08kNE0AIwNCwYK4XbSaOtVdqr4f-r8hlemdEkCRdkasp5NJH1DG-YaIX-tcP58AfqMa0YnzMz8fz1OOsw13L2qKZwQHBlWy9kjMRCquwZuBc86G6ffjz9evvHJdI" style="">
+<div class="hidden md:block">
+<span class="material-symbols-outlined text-4xl text-brand-green" style='font-variation-settings: "wght" 200;'>route</span>
 </div>
-<div class="md:col-span-1 md:row-span-1 relative overflow-hidden rounded-xl bg-surface-container-low">
-<img alt="Sunbeams through leaves" class="w-full h-full object-cover" data-alt="close up of vibrant green vine leaves with sunlight filtering through creating a soft glowing effect and detailed leaf veins" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf1RRkcL1xKGUNlJguGds0AeWMEfmdgC7RlUzWX9yOi2B_74owO4YRCMe7YV9MHAuVVql5yy8DjMfCPBEx7BBx_7j8N26myh9FSN9TdFOT78cFBoERa7qXtJ-m5gPA19ln--Om9efEgGpjnKKEDUNkng2iKmIQzLS1_Iid9o2CXhVtZzFdWkgjYEviGYxaglxjaMe3q3oTTuU61tMoqVRaUC4XDSgd_huq-O63eBCUiJOSWoAIwQbSZJyqVaNQuPraMM_Q2er8Tiw" style="">
 </div>
-<div class="md:col-span-1 md:row-span-1 bg-primary flex flex-col justify-center p-10 rounded-xl">
-<span class="text-on-primary label-md uppercase tracking-widest mb-4" style="">Impact</span>
-<p class="text-4xl font-bold text-on-primary tracking-tighter" style="">98%</p>
-<p class="text-on-primary/60 text-sm mt-2" style="">Renewable Energy Adoption across logistics nodes.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-outline-variant/20">
+<div class="bg-surface/60 py-12 pr-12 group hover:bg-surface-container-low transition-colors duration-500">
+<div class="font-serif text-3xl mb-4 text-primary group-hover:text-brand-green transition-colors" style="">Optimized Transport</div>
+<p class="font-body text-base text-on-surface-variant leading-relaxed mb-8" style="">
+                        Efficient routing and coordination to reduce delays and improve delivery performance.</p>
+<div class="flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300 cursor-pointer">
+<span class="font-label text-xs uppercase tracking-widest text-brand-green" style="">contact us</span>
+<span class="material-symbols-outlined text-sm text-brand-green" style="">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface/60 py-12 px-6 md:px-12 group hover:bg-surface-container-low transition-colors duration-500">
+<div class="font-serif text-3xl mb-4 text-primary group-hover:text-brand-orange transition-colors" style="">Cold Chain Efficiency</div>
+<p class="font-body text-base text-on-surface-variant leading-relaxed mb-8" style="">
+                        Maintaining product quality through consistent temperature control.</p>
+<div class="flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300 cursor-pointer">
+<span class="font-label text-xs uppercase tracking-widest text-brand-orange" style="">send us a message</span>
+<span class="material-symbols-outlined text-sm text-brand-orange" style="">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface/60 py-12 pl-12 group hover:bg-surface-container-low transition-colors duration-500">
+<div class="font-serif text-3xl mb-4 text-primary group-hover:text-brand-gold transition-colors" style="">Packing Standards</div>
+<p class="font-body text-base text-on-surface-variant leading-relaxed mb-8" style="">
+                        Using suitable packaging to protect product quality during transport.</p>
+<div class="flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300 cursor-pointer">
+<span class="font-label text-xs uppercase tracking-widest text-brand-gold" style="">visit us</span>
+<span class="material-symbols-outlined text-sm text-brand-gold" style="">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Responsibility (Editorial Card Grid) -->
+<section class="bg-surface-container-high/40 backdrop-blur-sm py-32 px-12 overflow-hidden border-y border-outline-variant/10">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-12 gap-12">
+<div class="col-span-12 md:col-span-4">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-brand-gold mb-6 block" style="">Global Impact</span>
+<h2 class="text-5xl font-serif text-primary leading-tight" style="">People &amp; Partnerships</h2>
+<p class="font-body text-lg mt-8 text-on-secondary-fixed-variant leading-relaxed" style="">
+                            We work with trusted partners and producers, building long-term relationships that support local communities and consistent supply.</p>
+</div>
+<div class="col-span-12 md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-0 relative group shadow-sm">
+<img class="w-full aspect-square object-cover" data-alt="Portrait of a coffee farmer in Ethiopia with warm lighting and a soft focus blurred green background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVWMg8l13gxaG_5HKYdd-_w59NhpbbVu18k8sg0loQW_-8-C48SgU1ZVoyoc-aCsOxIgMoK4LEiB6mAsaIOIXYIZHwZKK2hlwoONo7n-YzyHtpYmP1C13utcHD_tcdVzEFCi_pwxnjlKTOMEzwURXJACn-BLzdlQhvWtEZdtuTc31gf9SeLVw1HRx4MGewyxiuUz9Ayiw3EbJYV0ROYcM_zoelR8Ee7y1CnnyiohjEGN1JmwsvtVHqwE2Gfpe0d_iruNB9OY4gszA" style=""/>
+<div class="p-10">
+<h3 class="text-2xl font-serif mb-4 text-brand-green" style="">Direct Sourcing</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed" style="">Working closely with growers and suppliers in key regions.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-0 relative group mt-0 md:mt-24 shadow-sm">
+<img class="w-full aspect-square object-cover" data-alt="Close-up of hands working with local textiles in a bright airy studio with clean aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpWiOdFxj23BYfbW8hUEgTTnRzfRIxhZrN6vY-x9XkpSqHlseEVJ4ysGm_XOxO6V9o7zjsHglHlWG1KjGeYPJk6nStkn7wFKzQbPz4a3zq4DmkXalCX4ef4JS08sNlbBjN5kxU-s-Iy2vnnkQoVQCejEqdzyM7LigHBjQpj13gZYl1bniCs4FHFTzJPBLj03vlRk1EbVCRq6DDsMXblzqcEHSLX1HsWTzz53tTjhu1Wz7brdkWhR3bwLpbMklS0ZJP-oJHMKu7vQ8" style=""/>
+<div class="p-10">
+<h3 class="text-2xl font-serif mb-4 text-brand-orange" style="">Local Partnerships</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed" style="">
+                                    Supporting regional producers through long-term collaboration.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="bg-primary py-40 px-12 text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
+<path d="M-100,200 C200,100 400,300 720,200 C1040,100 1240,300 1540,200" fill="none" stroke="white" stroke-width="0.5"></path>
+</svg>
+</div>
+<div class="max-w-4xl mx-auto relative z-10">
+<h2 class="text-white font-serif text-5xl mb-12" style="">Build a more responsible supply chain.</h2>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<button class="bg-surface text-primary px-12 py-5 font-label text-sm uppercase tracking-widest hover:bg-brand-gold hover:text-black transition-colors duration-300 w-full md:w-auto" style="">send a message</button>
+<button class="border border-white/20 text-white px-12 py-5 font-label text-sm uppercase tracking-widest hover:bg-white/5 transition-colors duration-300 w-full md:w-auto" style="">Download catalog</button>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full border-t border-black/5 dark:border-white/5 bg-neutral-50 dark:bg-neutral-900">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-20 w-full px-10 py-24 max-w-[1440px] mx-auto font-['Inter'] leading-[1.8] tracking-wide text-sm">
-<div class="flex flex-col justify-between gap-12">
+<footer class="bg-[#e8e8e6] dark:bg-[#182310] full-width border-t-0 relative z-10">
+<div class="grid grid-cols-4 gap-16 w-full px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="col-span-4 md:col-span-1">
+<div class="text-xl font-serif text-[#182310] dark:text-[#f9f9f7] mb-8" style=""><span class="text-brand-green">Terra</span><span class="text-brand-orange">Nova</span></div>
+<p class="font-body text-sm text-[#2d3924]/70 dark:text-[#f9f9f7]/70 leading-relaxed" style="">
+                    A global logistics entity dedicated to the curator's approach to international trade.
+                </p>
+</div>
 <div>
-<span class="text-lg font-bold tracking-tighter text-black dark:text-white block mb-6" style="">TerraNova</span>
-<p class="max-w-xs text-black/50 dark:text-white/50" style="">Curating the finest botanical produce with a relentless focus on planetary health and human ethics.</p>
+<h4 class="font-label text-xs uppercase tracking-widest mb-8 text-brand-green" style="">Origins</h4>
+<ul class="space-y-4">
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:text-brand-green transition-colors duration-300 block font-body text-sm" href="#" style="">Alicante</a></li>
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:text-brand-green transition-colors duration-300 block font-body text-sm" href="#" style="">Ghana</a></li>
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:text-brand-green transition-colors duration-300 block font-body text-sm" href="#" style="">Mexico</a></li>
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:text-brand-green transition-colors duration-300 block font-body text-sm" href="#" style="">China</a></li>
+</ul>
 </div>
-<p class="text-black/50 dark:text-white/50" style="">© 2026 TerraNova Fresh. All rights reserved.</p>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest mb-8 text-brand-orange" style="">Legal</h4>
+<ul class="space-y-4">
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:text-brand-orange transition-colors duration-300 block font-body text-sm" href="#" style="">Privacy Policy</a></li>
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:text-brand-orange transition-colors duration-300 block font-body text-sm" href="#" style="">Terms of Service</a></li>
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:text-brand-orange transition-colors duration-300 block font-body text-sm" href="#" style="">Compliance</a></li>
+</ul>
 </div>
-<div class="grid grid-cols-2 gap-10">
-<div class="flex flex-col gap-4">
-<span class="font-bold text-black dark:text-white uppercase tracking-widest text-[0.7rem]" style="">Presence</span>
-<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#" style="">TerraNova. Europe.</a>
-<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#" style="">Instagram</a>
-<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#" style="">LinkedIn</a>
+<div class="col-span-4 md:col-span-1">
+<h4 class="font-label text-xs uppercase tracking-widest mb-8 text-brand-gold" style="">Stay Informed</h4>
+<div class="flex items-center border-b border-brand-gold/40 py-2">
+<input class="bg-transparent border-none focus:ring-0 font-body text-sm w-full" placeholder="Your industry email" type="email"/>
+<button class="material-symbols-outlined text-brand-gold" style="">north_east</button>
 </div>
-<div class="flex flex-col gap-4">
-<span class="font-bold text-black dark:text-white uppercase tracking-widest text-[0.7rem]" style="">Dialogue</span>
-<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#" style="">Direct</a>
-<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#" style="">Press Kit</a>
-<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white underline underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#" style="">Reporting</a>
-</div>
+<div class="mt-12 text-[#2d3924]/50 dark:text-[#f9f9f7]/50 font-label text-[10px] uppercase tracking-widest" style="">
+                    © 2024 TerraNova Global. All rights reserved.
+                </div>
 </div>
 </div>
 </footer>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Serif:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><style type="text/css"></style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#f4f4f2",
+                    "on-secondary-fixed-variant": "#474746",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6",
+                    "on-background": "#1a1c1b",
+                    "secondary-container": "#e2dfde",
+                    "outline": "#75786f",
+                    "surface-tint": "#55624a",
+                    "on-primary-fixed": "#131f0c",
+                    "outline-variant": "#c5c8bd",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-primary-fixed-variant": "#3e4a34",
+                    "on-secondary-container": "#636262",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "primary-fixed-dim": "#bdcbae",
+                    "surface-dim": "#dadad8",
+                    "primary-fixed": "#d9e7c9",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f9f9f7",
+                    "on-surface": "#1a1c1b",
+                    "tertiary-fixed-dim": "#dfbdcd",
+                    "secondary": "#5f5e5e",
+                    "on-surface-variant": "#454840",
+                    "surface": "#f9f9f7",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#f9f9f7",
+                    "on-tertiary-fixed-variant": "#58404c",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#2f1a25",
+                    "primary": "#182310",
+                    "surface-container": "#eeeeec",
+                    "primary-container": "#2d3924",
+                    "surface-container-high": "#e8e8e6",
+                    "on-tertiary-container": "#b596a5",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e2e3e1",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#291520",
+                    "on-primary-container": "#95a387",
+                    "tertiary-container": "#462f3b",
+                    "tertiary-fixed": "#fcd9e9",
+                    "inverse-primary": "#bdcbae",
+                    "inverse-on-surface": "#f1f1ef",
+                    "inverse-surface": "#2f3130",
+                    "surface-container-highest": "#e2e3e1",
+                    "brand-green": "#2B8233",
+                    "brand-orange": "#E85D22",
+                    "brand-gold": "#F7B500"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-tight { font-family: 'Noto Serif', serif; letter-spacing: -0.02em; }
+        .label-caps { font-family: 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.75rem; }
+        
+        /* Wavy lines animation and background */
+        .wavy-lines-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+            opacity: 0.2;
+        }
+        
+        @keyframes flow {
+            from { transform: translateX(-10%); }
+            to { transform: translateX(10%); }
+        }
+        
+        .wavy-path {
+            animation: flow 20s ease-in-out infinite alternate;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed relative">
+<!-- Persistent Wavy Background -->
+<div class="wavy-lines-container">
+<svg class="wavy-path" height="100%" preserveaspectratio="none" viewbox="0 0 1200 800" width="120%" xmlns="http://www.w3.org/2000/svg">
+<!-- Green Line -->
+<path d="M-100,200 C150,100 350,300 600,200 C850,100 1050,300 1300,200" fill="none" stroke="#2B8233" stroke-width="0.5"></path>
+<!-- Orange Line -->
+<path d="M-100,400 C200,350 400,450 600,400 C800,350 1000,450 1300,400" fill="none" stroke="#E85D22" stroke-width="0.5"></path>
+<!-- Gold Line -->
+<path d="M-100,600 C100,550 300,650 600,600 C900,550 1100,650 1300,600" fill="none" stroke="#F7B500" stroke-width="0.5"></path>
+<!-- Additional Subtle Strands -->
+<path d="M-100,220 C200,180 400,250 650,220 C900,190 1100,280 1300,230" fill="none" opacity="0.5" stroke="#2B8233" stroke-width="0.3"></path>
+<path d="M-100,420 C150,450 350,380 600,420 C850,460 1050,390 1300,420" fill="none" opacity="0.5" stroke="#E85D22" stroke-width="0.3"></path>
+<path d="M-100,620 C250,580 450,660 700,620 C950,580 1150,640 1300,610" fill="none" opacity="0.5" stroke="#F7B500" stroke-width="0.3"></path>
+</svg>
+</div>
+<!-- TopNavBar -->
+<nav class="bg-[#f9f9f7] dark:bg-[#182310] sticky top-0 z-50 backdrop-blur-[20px] bg-opacity-80">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-serif tracking-tighter text-[#182310] dark:text-[#f9f9f7]" href="#" style="">TerraNova</a>
+<div class="hidden md:flex gap-12 items-center"><a class="text-[#2d3924]/60 dark:text-[#f9f9f7]/60 hover:text-[#182310] dark:hover:text-white transition-colors duration-300 ease-in-out font-body text-lg" href="index.html" style="">Home</a>
+<a class="text-[#2d3924]/60 dark:text-[#f9f9f7]/60 hover:text-[#182310] dark:hover:text-white transition-colors duration-300 ease-in-out font-body text-lg" href="produce.html" style="">Products</a>
+<a class="text-[#2d3924]/60 dark:text-[#f9f9f7]/60 hover:text-[#182310] dark:hover:text-white transition-colors duration-300 ease-in-out font-body text-lg" href="logistics.html" style="">Logistics</a>
+<a class="text-[#2d3924]/60 dark:text-[#f9f9f7]/60 hover:text-[#182310] dark:hover:text-white transition-colors duration-300 ease-in-out font-body text-lg" href="sustainability.html" style="">Sustainability</a>
+<a class="text-[#182310] dark:text-white border-b-2 border-[#182310] dark:border-white pb-1 font-body text-lg" href="about.html" style="">About</a>
+</div>
+<div class="flex gap-6 items-center">
+<button class="label-caps px-6 py-3 border border-outline/20 hover:bg-surface-container-low transition-colors duration-300" style="">Contact</button>
+<button class="label-caps px-8 py-3 bg-gradient-to-r from-primary to-primary-container text-white hover:opacity-90 transition-opacity duration-300" style="">Request Supply</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full min-h-[716px] flex flex-col justify-center px-12 max-w-screen-2xl mx-auto py-24 bg-transparent z-10">
+<div class="grid grid-cols-12 gap-8 items-end">
+<div class="col-span-12 lg:col-span-8">
+<span class="label-caps text-on-surface-variant mb-6 block" style="">Meets Innovation</span>
+<h1 class="text-7xl md:text-8xl serif-tight leading-[1.1] mb-8" style="">Connecting global supply with European Markets.</h1>
+</div>
+<div class="col-span-12 lg:col-span-4 lg:pb-4">
+<p class="text-body-lg text-on-surface-variant leading-relaxed max-w-sm" style="">
+                    TerraNova connects growers, exporters and distributors ensuring reliable supply and efficient distribution across Europe.</p>
+</div>
+</div>
+<div class="mt-20 aspect-[21/9] w-full overflow-hidden relative">
+<img alt="Vast green plantation" class="w-full h-full object-cover grayscale-[0.2]" data-alt="Wide cinematic shot of lush terraced tea plantations in early morning mist with soft ambient green and gray tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxEdZFE-wt154oPLmnxKxjhSWVTKfPK5hI1uvrp5_T51o80G8q--POL7FlB-Na79YZ0utz_UkVXGUMQtSNRYO4zr_7hv_BlLVrPKY5zC1ZdMnpUbpE9ArbCSTZefKQsbKWq-14ReEW06WV5yxoPa0hvK1V17OXghGUPtEKO_lySQ87ClclWWUt_mpyAE8InPaaAGyH47hdzr99dVvc1OUAdgwN2AQIOUheZqZ0z1SmEwkWUIAnD0o4TpNOXJCuCg1YEnV2_IkCvR0" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/20 to-transparent pointer-events-none"></div>
+</div>
+</header>
+<!-- Positioning: The Team & Brand -->
+<section class="relative py-32 px-12 bg-surface-container-low/80 backdrop-blur-sm z-10">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-12 gap-16 items-start">
+<div class="col-span-12 lg:col-span-5">
+<div class="sticky top-32">
+<h2 class="text-5xl serif-tight mb-8" style="">Built on Experience.</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-12" style="">
+                        TerraNova is built on industry knowledge in sourcing, logistics and international trade, focused on delivering reliable fresh produce to European markets.</p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<span class="text-4xl serif-tight block mb-2" style="">Global Sourcing Network</span>
+<span class="label-caps text-on-surface-variant" style=""><br/></span>
+</div>
+<div>
+<span class="text-4xl serif-tight block mb-2" style="">European Distribution Focus</span>
+<span class="label-caps text-on-surface-variant" style=""><br/></span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-7">
+<div class="space-y-24">
+<div class="bg-surface-container-lowest/90 p-12 border border-outline-variant/10">
+<span class="label-caps text-primary mb-6 block" style="">Our Heritage</span>
+<p class="text-2xl leading-relaxed text-on-surface mb-8" style="">We Work with experienced partners across key producing regions, building long-term relationships based on trust, consistency and quality.</p>
+<div class="h-96 overflow-hidden">
+<img alt="Logistics team" class="w-full h-full object-cover grayscale" data-alt="Black and white portrait of a diverse team of professionals in a minimalist high-end office environment with natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDPl1iJJfY1bz_Nlx4G8eyVcA8L03cMAGnSm4Dg1CZSZhn1Y0O7Dueaqn6gBjJ7AFdky6oxK4zuTiMGKz387VZnnTEwNs2A3HdXjdWKUuMsXlGvS-tDFr6CBxMlmov0UBxwwAXAaInPAAkqU3WfwB1cn_SoN46jAxXLA2pleS_f7Q5kjr0XhjwzEtXSXr1FddM1tDJVPBcbBx1s-CIK02-nOEPDQT2ghSduRhKdH6RrfkPqG2aipoxDcnxvnbXFfpyeL_fQzh0pM8" style=""/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div class="bg-surface-container-lowest/90 p-8 flex flex-col justify-between aspect-square border border-outline-variant/10">
+<h3 class="text-2xl serif-tight" style="">Direct Sourcing</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">We work closely with growers to ensure consistent quality and reliable supply.</p>
+</div>
+<div class="bg-primary/95 text-white p-8 flex flex-col justify-between aspect-square">
+<h3 class="text-2xl serif-tight" style="">Reliable Partnerships</h3>
+<p class="text-on-primary-container leading-relaxed" style="">We build long-term relationships with suppliers and clients across the supply chain.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission, Vision, Values (Bento Grid) -->
+<section class="relative py-32 px-12 bg-transparent z-10">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-20">
+<span class="label-caps text-on-surface-variant mb-4 block" style="">Foundations</span>
+<h2 class="text-6xl serif-tight" style="">MISSION.</h2>
+</div>
+<div class="grid grid-cols-12 gap-8">
+<!-- Mission -->
+<div class="col-span-12 md:col-span-8 bg-surface-container-lowest/90 p-16 border-r border-b border-surface-container-high border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl mb-8 text-primary" style="">target</span>
+<h3 class="text-4xl serif-tight mb-6" style="">Mission</h3>
+<p class="text-2xl leading-relaxed text-on-surface-variant max-w-2xl" style="">
+                        To connect global fresh produce supply with European markets through reliable sourcing and logistics.</p>
+</div>
+<!-- Vision -->
+<div class="col-span-12 md:col-span-4 bg-surface-container-low/90 p-16 border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl mb-8 text-primary" style="">visibility</span>
+<h3 class="text-4xl serif-tight mb-6" style="">Vision</h3>
+<p class="text-lg leading-relaxed text-on-surface-variant" style="">
+                        To become a trusted partners in international fresh produce trade.
+                    </p>
+</div>
+<!-- Values -->
+<div class="col-span-12 grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+<div class="p-12 border-t border-surface-container-high">
+<h4 class="label-caps mb-6 text-primary" style="">Global sourcing</h4>
+<p class="text-on-surface-variant" style="">We treat the global market as a single, interconnected community where every node matters.</p>
+</div>
+<div class="p-12 border-t border-surface-container-high">
+<h4 class="label-caps mb-6 text-primary" style="">efficient logistics</h4>
+<p class="text-on-surface-variant" style="">In logistics, centimeters and seconds define the difference between success and failure.</p>
+</div>
+<div class="p-12 border-t border-surface-container-high">
+<h4 class="label-caps mb-6 text-primary" style="">quality standards</h4>
+<p class="text-on-surface-variant" style="">We are the custodians of the product and the reputation of the people who grew it.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Partnership Section -->
+<section class="relative py-32 px-12 bg-primary/95 text-white z-10 overflow-hidden">
+<!-- Specific wavy lines for dark section for better contrast -->
+<div class="absolute inset-0 pointer-events-none opacity-10">
+<svg height="100%" preserveaspectratio="none" viewbox="0 0 1000 500" width="100%">
+<path d="M0,100 Q250,50 500,100 T1000,100" fill="none" stroke="#F7B500" stroke-width="1"></path>
+<path d="M0,250 Q250,200 500,250 T1000,250" fill="none" stroke="#E85D22" stroke-width="1"></path>
+<path d="M0,400 Q250,350 500,400 T1000,400" fill="none" stroke="#ffffff" stroke-width="0.5"></path>
+</svg>
+</div>
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-20 items-center relative z-10">
+<div class="w-full md:w-1/2">
+<img alt="Hands shaking over map" class="w-full aspect-[4/5] object-cover grayscale brightness-75" data-alt="Close-up of a firm handshake between two people in business attire, with a faint map of the world visible in the background background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA1AkxRyfzT2XDkXrHPZPGqB8TaukviKwdqTkVb7o5KY2_hqjyU6M4M71sygj-B5zdj-U75b_X8PLol39_HnYHSyxHatkyUgaTkItOfLxU6zCe3eze1y4VhSoJ4bUGuNUdhVqcko2TeA7MgnGkLFvmsOSwQ7ZMx4aOirPtBsbIawXOUf5uPFvHs4dcklirIjlWdyMjGMH6Bh7vgpGmNE9_CASJJdq5nwOoqxrTJfUN1ffYVQO8ESEvob_yijynwUPQjpCDO_rYTMQ" style=""/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="label-caps text-on-primary-container mb-6 block" style="">Partnership</span>
+<h2 class="text-6xl serif-tight mb-10 leading-tight" style="">A Reliable Global Supply Partner.</h2>
+<div class="space-y-12">
+<div class="flex gap-8 items-start">
+<span class="text-2xl font-serif text-on-primary-container" style="">01</span>
+<div>
+<h4 class="text-2xl serif-tight mb-2" style="">Direct Sourcing</h4>
+<p class="text-on-primary-container leading-relaxed" style="">Working dirctly with producers in key regions.</p>
+</div>
+</div>
+<div class="flex gap-8 items-start">
+<span class="text-2xl font-serif text-on-primary-container" style="">02</span>
+<div>
+<h4 class="text-2xl serif-tight mb-2" style="">Efficient Logistics</h4>
+<p class="text-on-primary-container leading-relaxed" style="">Ensuring reliable transport and delivery.</p>
+</div>
+</div>
+<div class="flex gap-8 items-start">
+<span class="text-2xl font-serif text-on-primary-container" style="">03</span>
+<div>
+<h4 class="text-2xl serif-tight mb-2" style="">Market Access</h4>
+<p class="text-on-primary-container leading-relaxed" style="">Connecting supply with European demand.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="relative bg-[#e8e8e6]/95 dark:bg-[#182310] text-[#182310] dark:text-[#f9f9f7] border-t-0 z-10 backdrop-blur-sm">
+<div class="grid grid-cols-4 gap-16 w-full px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="col-span-4 lg:col-span-1">
+<div class="text-xl font-serif text-[#182310] dark:text-[#f9f9f7] mb-8" style="">TerraNova</div>
+<p class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 mb-8 font-body leading-relaxed" style="">
+                    Crafting the future of global agricultural trade through heritage and high-tech precision.
+                </p>
+<p class="text-xs label-caps opacity-50" style="">© 2024 TerraNova Global. All rights reserved.</p>
+</div>
+<div class="col-span-2 lg:col-span-1">
+<h4 class="label-caps mb-8" style="">Global Hubs</h4>
+<ul class="space-y-4">
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:translate-x-1 transition-transform duration-300 block" href="#" style="">Alicante</a></li>
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:translate-x-1 transition-transform duration-300 block" href="#" style="">Ghana</a></li>
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:translate-x-1 transition-transform duration-300 block" href="#" style="">Mexico</a></li>
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:translate-x-1 transition-transform duration-300 block" href="#" style="">China</a></li>
+</ul>
+</div>
+<div class="col-span-2 lg:col-span-1">
+<h4 class="label-caps mb-8" style="">Governance</h4>
+<ul class="space-y-4">
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:translate-x-1 transition-transform duration-300 block" href="#" style="">Privacy Policy</a></li>
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:translate-x-1 transition-transform duration-300 block" href="#" style="">Terms of Service</a></li>
+<li class="" style=""><a class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 hover:translate-x-1 transition-transform duration-300 block" href="#" style="">Compliance</a></li>
+</ul>
+</div>
+<div class="col-span-4 lg:col-span-1">
+<h4 class="label-caps mb-8" style="">Newsletter</h4>
+<p class="text-[#2d3924]/70 dark:text-[#f9f9f7]/70 mb-6 font-body" style="">Trade insights and soil reports.</p>
+<div class="relative">
+<input class="w-full bg-transparent border-b border-outline-variant/30 py-2 focus:border-primary outline-none transition-colors duration-300" placeholder="Email Address" type="email"/>
+<button class="absolute right-0 bottom-2 text-primary" style="">
+<span class="material-symbols-outlined" style="">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

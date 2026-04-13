@@ -1,266 +1,404 @@
-<!DOCTYPE html><html class="light" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-tertiary-fixed": "#ffffff",
-                        "tertiary": "#3a3b40",
-                        "on-tertiary": "#e3e2e7",
-                        "surface-container-highest": "#e2e2e4",
-                        "primary-fixed-dim": "#474747",
-                        "inverse-surface": "#2f3132",
-                        "on-primary": "#e2e2e2",
-                        "outline": "#777777",
-                        "on-tertiary-fixed-variant": "#e3e2e7",
-                        "surface-container-low": "#f3f3f5",
-                        "on-error": "#ffffff",
-                        "secondary-fixed-dim": "#acaaad",
-                        "primary-container": "#3b3b3b",
-                        "tertiary-fixed": "#5e5e63",
-                        "primary": "#000000",
-                        "primary-fixed": "#5e5e5e",
-                        "secondary-container": "#d6d3d6",
-                        "error-container": "#ffdad6",
-                        "on-primary-fixed-variant": "#e2e2e2",
-                        "surface-container-high": "#e8e8ea",
-                        "error": "#ba1a1a",
-                        "inverse-on-surface": "#f0f0f2",
-                        "on-tertiary-container": "#ffffff",
-                        "on-error-container": "#410002",
-                        "inverse-primary": "#c6c6c6",
-                        "secondary": "#5f5e60",
-                        "surface-container": "#eeeef0",
-                        "on-secondary-fixed-variant": "#3b3b3d",
-                        "on-secondary": "#ffffff",
-                        "background": "#f9f9fb",
-                        "on-secondary-fixed": "#1b1b1d",
-                        "surface-bright": "#f9f9fb",
-                        "secondary-fixed": "#c8c6c8",
-                        "on-surface-variant": "#474747",
-                        "on-primary-container": "#ffffff",
-                        "on-background": "#1a1c1d",
-                        "surface-variant": "#e2e2e4",
-                        "tertiary-fixed-dim": "#46464b",
-                        "surface-container-lowest": "#ffffff",
-                        "on-primary-fixed": "#ffffff",
-                        "outline-variant": "#c6c6c6",
-                        "surface-tint": "#5e5e5e",
-                        "surface": "#f9f9fb",
-                        "tertiary-container": "#747479",
-                        "surface-dim": "#d9dadc",
-                        "on-secondary-container": "#1b1b1d",
-                        "on-surface": "#1a1c1d"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "fontFamily": {
-                        "headline": ["Inter"],
-                        "body": ["Inter"],
-                        "label": ["Inter"]
-                    }
-                },
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#f4f4f2",
+                    "on-secondary-fixed-variant": "#474746",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6",
+                    "on-background": "#1a1c1b",
+                    "secondary-container": "#e2dfde",
+                    "outline": "#75786f",
+                    "surface-tint": "#55624a",
+                    "on-primary-fixed": "#131f0c",
+                    "outline-variant": "#c5c8bd",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-primary-fixed-variant": "#3e4a34",
+                    "on-secondary-container": "#636262",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "primary-fixed-dim": "#bdcbae",
+                    "surface-dim": "#dadad8",
+                    "primary-fixed": "#d9e7c9",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f9f9f7",
+                    "on-surface": "#1a1c1b",
+                    "tertiary-fixed-dim": "#dfbdcd",
+                    "secondary": "#5f5e5e",
+                    "on-surface-variant": "#454840",
+                    "surface": "#f9f9f7",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#f9f9f7",
+                    "on-tertiary-fixed-variant": "#58404c",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#2f1a25",
+                    "primary": "#182310",
+                    "surface-container": "#eeeeec",
+                    "primary-container": "#2d3924",
+                    "surface-container-high": "#e8e8e6",
+                    "on-tertiary-container": "#b596a5",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e2e3e1",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#291520",
+                    "on-primary-container": "#95a387",
+                    "tertiary-container": "#462f3b",
+                    "tertiary-fixed": "#fcd9e9",
+                    "inverse-primary": "#bdcbae",
+                    "inverse-on-surface": "#f1f1ef",
+                    "inverse-surface": "#2f3130",
+                    "surface-container-highest": "#e2e3e1",
+                    "brand-green": "#1b6232",
+                    "brand-orange": "#e65100",
+                    "brand-gold": "#fbc02d"
             },
-        }
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
     </script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .vertical-label {
-            writing-mode: vertical-rl;
-        }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .label-md { font-family: 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; }
+        
+        .bg-curves {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            opacity: 0.15;
         }
     </style>
-<style type="text/css"></style></head>
-<body class="bg-background text-on-background font-body antialiased pt-[88px]">
-<!-- Shared Navigation -->
-<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-[0_40px_40px_-15px_rgba(0,0,0,0.04)] duration-300 ease-in-out">
-<div class="flex justify-between items-center px-10 py-6 w-full max-w-screen-2xl mx-auto">
-<div class="flex items-center gap-12">
-<div class="flex items-center gap-3">
-<div class="size-6 text-zinc-900 dark:text-zinc-50">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+<!-- Persistent Background Curves -->
+<div class="bg-curves">
+<svg height="100%" preserveaspectratio="none" viewbox="0 0 1440 900" width="100%" xmlns="http://www.w3.org/2000/svg">
+<!-- Deep Green Wave -->
+<path class="animate-pulse" d="M0 150 Q 360 50 720 150 T 1440 150" fill="none" stroke="#1b6232" stroke-width="0.5" style="animation-duration: 8s;"></path>
+<path d="M0 165 Q 360 65 720 165 T 1440 165" fill="none" opacity="0.5" stroke="#1b6232" stroke-width="0.3"></path>
+<!-- Vibrant Orange Wave -->
+<path class="animate-pulse" d="M0 450 Q 360 550 720 450 T 1440 450" fill="none" stroke="#e65100" stroke-width="0.5" style="animation-duration: 10s;"></path>
+<path d="M0 465 Q 360 565 720 465 T 1440 465" fill="none" opacity="0.5" stroke="#e65100" stroke-width="0.3"></path>
+<!-- Golden Yellow Wave -->
+<path class="animate-pulse" d="M0 750 Q 360 650 720 750 T 1440 750" fill="none" stroke="#fbc02d" stroke-width="0.5" style="animation-duration: 12s;"></path>
+<path d="M0 765 Q 360 665 720 765 T 1440 765" fill="none" opacity="0.5" stroke="#fbc02d" stroke-width="0.3"></path>
+<!-- Vertical accent lines -->
+<path d="M100 0 C 150 300 50 600 100 900" fill="none" opacity="0.3" stroke="#1b6232" stroke-width="0.2"></path>
+<path d="M1340 0 C 1290 300 1390 600 1340 900" fill="none" opacity="0.3" stroke="#fbc02d" stroke-width="0.2"></path>
 </svg>
 </div>
-<h2 class="text-xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50" style="">TerraNova</h2>
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#f9f9f7]/80 backdrop-blur-[20px]">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif tracking-tighter text-[#182310] flex items-center gap-2">
+<a class="flex items-center gap-2" href="#">
+<span>TerraNova</span>
+</a>
 </div>
-<nav class="hidden md:flex items-center gap-8 font-['Inter'] tracking-tight text-sm font-medium">
-<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors" href="#" style="">Home</a>
-<a class="text-zinc-900 dark:text-zinc-50 font-bold border-b border-zinc-900 dark:border-zinc-50 pb-1" href="#" style="">Produce</a>
-<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors" href="#" style="">Logistics</a>
-<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors" href="#" style="">Sustainability</a>
-<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors" href="#" style="">Contact</a>
+<nav class="hidden md:flex items-center gap-10"><a class="text-sm font-body text-[#2d3924]/60 hover:text-[#182310] transition-colors duration-300 ease-in-out" href="index.html">Home</a>
+<a class="text-sm font-body text-[#182310] border-b-2 border-[#182310] pb-1 transition-colors duration-300 ease-in-out" href="produce.html">Products</a>
+<a class="text-sm font-body text-[#2d3924]/60 hover:text-[#182310] transition-colors duration-300 ease-in-out" href="logistics.html">Logistics</a>
+<a class="text-sm font-body text-[#2d3924]/60 hover:text-[#182310] transition-colors duration-300 ease-in-out" href="sustainability.html">Sustainability</a>
+<a class="text-sm font-body text-[#2d3924]/60 hover:text-[#182310] transition-colors duration-300 ease-in-out" href="about.html">About</a>
 </nav>
-</div>
 <div class="flex items-center gap-6">
-<div class="flex items-center gap-4 text-zinc-900 dark:text-zinc-50">
-<button class="p-2 hover:opacity-70 transition-opacity" style="">
-<span class="material-symbols-outlined" style="">shopping_cart</span>
-</button>
-<button class="p-2 hover:opacity-70 transition-opacity" style="">
-<span class="material-symbols-outlined" style="">account_circle</span>
-</button>
+<button class="text-sm font-body text-[#2d3924]/60 hover:text-[#182310] transition-colors duration-300" onclick="window.location.href=\'contact.html\'">Contact</button>
+<button class="bg-primary text-on-primary px-6 py-3 text-sm font-medium hover:bg-primary-container transition-colors duration-300 ease-in-out">Request Supply</button>
 </div>
 </div>
-</div>
-<div class="bg-zinc-100 dark:bg-zinc-800 h-[1px] opacity-20"></div>
 </header>
-<main class="flex flex-col">
-<!-- Section 1: Secondary Hero -->
-<section class="relative px-6 lg:px-20 pt-24 pb-32 flex flex-col items-center text-center">
-<span class="label-md uppercase tracking-[0.2em] text-secondary mb-8 block" style="">Seasonal Selection</span>
-<h1 class="text-[clamp(3rem,8vw,5.5rem)] font-bold tracking-[-0.03em] leading-[0.9] text-primary max-w-5xl" style="">
-                OUR PRODUCT RANGE</h1>
-</section>
-<!-- Section 2: Categories Introduction -->
-<section class="px-6 lg:px-20 py-24 bg-surface-container-low">
-<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
-<div class="lg:col-span-7">
-<h2 class="text-headline-lg font-bold text-primary mb-6" style="">Fresh Products. Global Sourcing</h2>
-<p class="text-body-lg text-on-surface-variant max-w-2xl leading-relaxed" style="">
-                        We supply a wide range of fresh fruits and vegetables sourced from trusted growers worldwide.<div><br></div><div>Our portfolio is designed to meet the needs of importers, distributors and retailers across Europe.</div></p>
+<main class="pt-32 pb-24 relative z-10">
+<!-- Hero Section -->
+<section class="px-12 max-w-screen-2xl mx-auto mb-32">
+<div class="grid grid-cols-12 gap-8 items-end">
+<div class="col-span-12 lg:col-span-7">
+<p class="label-md text-on-surface-variant mb-6">Global Agricultural Portfolio</p>
+<h1 class="text-7xl font-serif text-primary leading-[1.1] tracking-tight">Global Supply.<br/>Consistent Quality.</h1>
 </div>
-<div class="lg:col-span-5 flex justify-end">
-<div class="flex gap-4">
-<button class="size-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" style="">
-<span class="material-symbols-outlined" style="">west</span>
-</button>
-<button class="size-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" style="">
-<span class="material-symbols-outlined" style="">east</span>
-</button>
-</div>
+<div class="col-span-12 lg:col-span-5 pb-2">
+<p class="text-body-lg text-on-surface-variant leading-relaxed max-w-md">
+                        We supply high-demand fresh produce sourced across key global regions, ensuring consistent quality, reliable logistics and year-round availability.</p>
 </div>
 </div>
 </section>
-<!-- Section 3: Product Grid -->
-<section class="px-6 lg:px-20 py-32 bg-background">
-<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
-<!-- Specimen 1: Essential Greens -->
-<div class="flex flex-col group">
-<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-10 transition-transform duration-700 group-hover:scale-[1.02]">
-<img alt="Fresh leafy greens" class="w-full h-full object-cover" data-alt="Close-up of vibrant green kale and spinach leaves with dew drops against a neutral grey minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8d72S79E4zrRltmOqPTtXyErir8dPPDOG1mlbf2pUrpI6hvlSQLUqBJlx_UEmAJPsaM7WSdSHK6RtTypGFGSCXxKXvK27p9tFwqJJl1f9Rfk7dD7Xl5zwFkzxV4lK3JP2jPFvjADhk-o6Oz5C87nqrhkaiyVvYd1v2WfFN1voF2GZH5Nq2NCXZ12bSA4ib3DWEkMQGN01ix_DBSCLRj0Jnvq0JUcpR5P5bxGdwD3lZo64NqCOeRZNG9rg2DH0iMuueyd_Klu-3Ds" style="">
-<div class="absolute top-8 right-8 vertical-label">
-<span class="text-[0.65rem] uppercase tracking-widest text-primary font-bold bg-white/90 backdrop-blur px-2 py-4 rounded-full border border-outline-variant/20" style="">asian vegetables<br></span>
+<!-- Product Categories Bento Grid -->
+<section class="px-12 max-w-screen-2xl mx-auto space-y-24">
+<!-- Category: Asian Vegetables -->
+<div class="space-y-12">
+<div class="flex justify-between items-baseline border-b border-outline-variant/20 pb-4">
+<h2 class="text-3xl font-serif text-primary">Asian Vegetables</h2>
+<span class="label-md text-on-surface-variant">Hub: China</span>
 </div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product Card -->
+<div class="group bg-surface-container-lowest/60 backdrop-blur-sm p-8 flex flex-col h-full border border-outline-variant/10">
+<div class="mb-8 aspect-[4/5] overflow-hidden bg-surface-container-low">
+<img alt="Close-up of fresh pak choi" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBbpkS0YpK12JD9-8d-0ZEK34HOZdKzml75HHUZYKdn4tYexOLy8gk_kw7-dChRhCDU2nJJtfiJWyJpUEu7ipOP4n6sPmYlvD2paQbhpFAvubpc5BIe-Ps8WSGOovylRCVSKXEYGT6mVCgBSYD_Fwny7DemqycnghA24QjLE0JO5R60zbv6HA9E7PQ0fwA8KUvau3yWzQ0HXrIuBzEkVYEOAzzQgA79LlfmgAN0ubv6msrTO3cayuHAJOYrKLNzWh4Mm4R4YNgBKM"/>
 </div>
-<div class="flex flex-col">
-<div class="flex items-center justify-between mb-4">
-<h3 class="text-2xl font-bold tracking-tight text-primary" style="">Asian Vegetables.</h3>
-<span class="text-sm font-medium text-secondary" style=""><br></span>
-</div>
-<div class="flex flex-wrap gap-2 mb-6">
-<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary" style=""><br></span>
-<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary" style=""><br></span>
-<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary" style=""><br></span>
-</div>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-8" style="">
-                            Specialized varieties incluing eggplant, karela, long beans and more.</p>
-<a class="text-primary font-bold text-sm tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all" href="#" style="">
-                            Explore&nbsp;<span class="material-symbols-outlined text-[18px]" style="">arrow_forward</span>
-</a>
-</div>
-</div>
-<!-- Specimen 2: Vibrant Roots -->
-<div class="flex flex-col group pt-0 lg:pt-20">
-<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-10 transition-transform duration-700 group-hover:scale-[1.02]">
-<img alt="Heirloom carrots and root vegetables" class="w-full h-full object-cover" data-alt="Artistic arrangement of heirloom carrots with soil details and earthy tones on a white gallery plinth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtKT0j_JKKT_E-FrUIWgfgxqFG7iKXit1tCslMd9gBUbdb9qQkNSz18VlXwIIfu6TIcukXbzsRyUEGTE2OygkaEYkF-dFDAY3PrWJkNjXMNz-hSuC-ANP_RDjdvtpKeqM-BcMhnLw6yUvyQVR1fUUqDYGBoidmcF6XxDyCzHXC1onCTG2DqxfpDm7HbTquO-MYLDvKtxEBP9T0DAwChO_LctZ_c4WEkWxpYLS3nUVkmVhoj7TQFF5i2TLprHvRlRFw8AxxV3GGYpE" style="">
-<div class="absolute top-8 right-8 vertical-label">
-<span class="text-[0.65rem] uppercase tracking-widest text-primary font-bold bg-white/90 backdrop-blur px-2 py-4 rounded-full border border-outline-variant/20" style="">Peppers &amp; Chillies<br></span>
-</div>
-</div>
-<div class="flex flex-col">
-<div class="flex items-center justify-between mb-4">
-<h3 class="text-2xl font-bold tracking-tight text-primary" style="">Peppers &amp; Chillies.</h3>
-<span class="text-sm font-medium text-secondary" style=""><br></span>
-</div>
-<div class="flex flex-wrap gap-2 mb-6">
-<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary" style=""><br></span>
-<span class="px-3 py-1 rounded-full border border-outline-variant/30 text-[0.7rem] uppercase tracking-wider text-secondary" style=""><br></span>
-</div>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-8" style="">
-                            A wide range of hot and specialty peppers for international markets.</p>
-<a class="text-primary font-bold text-sm tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all" href="#" style="">explore&nbsp;<span class="material-symbols-outlined text-[18px]" style="">arrow_forward</span>
-</a>
-</div>
-</div>
-<!-- Specimen 3: Seasonal Exotics -->
-<div class="flex flex-col group pt-0 lg:pt-40">
-<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-10 transition-transform duration-700 group-hover:scale-[1.02]">
-<img alt="Dragon fruit and exotic tropicals" class="w-full h-full object-cover" data-alt="Hyper-detailed shot of sliced pitaya and mangosteen with vibrant pinks and whites under dramatic studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd3E5ayLVtMstXwQyVn9rsrkDBjCMPmSI1bTB4KO8tH9AtU0SUo-_6F7l6QPaWCz4H2Tt8fmxc7tD7m23UdguuqzJI8d2Tug4dwn6jSvkwfxz1Ry4Bce7n69Y_aEFpf-seC7ADrOCSry_EuxYNdVu2yoliVJasmZ7UF2RNnuKHurv14VTvYsKtBPQzyx6dt1xE4i4Cdki3YHpleBCX7JVFyuGDp0M7cWALrjtcS-veVFiAzPsoR4_YkW-AxBCzyXgNVWLzhAWTBT0" style="">
-<div class="absolute top-8 right-8 vertical-label">
-<span class="text-[0.65rem] uppercase tracking-widest text-primary font-bold bg-white/90 backdrop-blur px-2 py-4 rounded-full border border-outline-variant/20" style="">Tropical &amp; Exotic<br></span>
-</div>
-</div>
-<div class="flex flex-col">
-<div class="flex items-center justify-between mb-4">
-<h3 class="text-2xl font-bold tracking-tight text-primary" style="">Tropical &amp; Exotics Products.</h3>
-<span class="text-sm font-medium text-secondary" style=""><br></span>
-</div>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-8" style="">
-                            Yam, tropical fruts and seasonal imports from Africa, Latin America and Asia.</p>
-<a class="text-primary font-bold text-sm tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all" href="#" style="">
-                            Request Portfolio <span class="material-symbols-outlined text-[18px]" style="">arrow_forward</span>
-</a>
+<div class="mt-auto">
+<p class="label-md text-primary mb-2">P-7729</p>
+<h3 class="text-2xl font-serif mb-4">EggPlant</h3>
+<div class="grid grid-cols-2 gap-4 pt-4 border-t border-outline-variant/10">
+<div>
+<p class="label-md text-on-surface-variant text-[10px]">Origin</p>
+<p class="text-sm font-medium">China</p>
 </div>
 </div>
 </div>
-</section>
-<!-- Signature Footer Section -->
-<footer class="px-6 lg:px-20 py-24 bg-surface-container-lowest border-t border-outline-variant/10">
-<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-<div class="md:col-span-2">
-<div class="flex items-center gap-3 mb-8">
-<div class="size-6 text-primary">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</div>
+<!-- Product Card -->
+<div class="group bg-surface-container-lowest/60 backdrop-blur-sm p-8 flex flex-col h-full border border-outline-variant/10">
+<div class="mb-8 aspect-[4/5] overflow-hidden bg-surface-container-low">
+<img alt="Top view of fresh lotus root" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqmlpU1CdNHIBOOQfvlAk9SGcHLWae0yN5tVRhgmed4xEgpzLxVuGIbnoouY4_TZhimJR2He2Ighd5PzE_CvH48sHG2mbuleY9RqvIep0l7AyIiaJ4LGWkYB8Y2HwyooiZ9h-TwzooYXkWFJQcYzShAEB7k_a4aWOfgQWJ4QnX6BAAR5_35h7WjfmC0xLhsv_72-tDzt1A-Js9cgYv2dlTx_q8BhVp7lK1Y3hzOkzbstJUUOPiiXTJsA4zwemVAHkyBkyowqpdgnY"/>
+</div>
+<div class="mt-auto">
+<p class="label-md text-primary mb-2">P-8831</p>
+<h3 class="text-2xl font-serif mb-4">Bitter Melon</h3>
+<div class="grid grid-cols-2 gap-4 pt-4 border-t border-outline-variant/10">
+<div>
+<p class="label-md text-on-surface-variant text-[10px]">Origin</p>
+<p class="text-sm font-medium">China</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary text-on-primary p-12 flex flex-col justify-between relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg height="100%" preserveaspectratio="none" viewbox="0 0 400 600" width="100%">
+<path d="M0 100 Q 200 0 400 100 T 800 100" fill="none" stroke="#ffffff" stroke-width="2"></path>
+<path d="M0 300 Q 200 200 400 300 T 800 300" fill="none" stroke="#ffffff" stroke-width="1"></path>
 </svg>
 </div>
-<h2 class="text-primary text-xl font-bold tracking-tight" style="">TerraNova</h2>
-</div>
-<p class="text-secondary max-w-sm text-sm leading-relaxed" style="">
-                        Curating the Earth's finest produce for those who demand uncompromising quality. Born from nature, refined by expertise.
-                    </p>
-</div>
-<div>
-<h4 class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6" style="">Navigation</h4>
-<ul class="flex flex-col gap-4 text-sm text-on-surface-variant">
-<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Catalog</a></li>
-<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Global Sourcing</a></li>
-<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Our Ethos</a></li>
-<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Logistics</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6" style="">Inquiries</h4>
-<ul class="flex flex-col gap-4 text-sm text-on-surface-variant">
-<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Wholesale Portfolio</a></li>
-<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Private Events</a></li>
-<li class="" style=""><a class="hover:text-primary transition-colors" href="#" style="">Contact Curator</a></li>
-</ul>
+<span class="material-symbols-outlined text-4xl relative z-10" style='font-variation-settings: "FILL" 1;'>inventory_2</span>
+<div class="relative z-10">
+<h3 class="text-3xl font-serif mb-4">Product Catalog</h3>
+<p class="body-lg text-on-primary-container leading-relaxed mb-8">
+                                Download our full product list (we will update the list as new products become available).</p>
+<button class="border border-on-primary-container px-6 py-3 text-sm label-md hover:bg-on-primary-container hover:text-primary transition-colors">CATALOG</button>
 </div>
 </div>
-<div class="max-w-[1440px] mx-auto mt-24 pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-6">
-<span class="text-[0.7rem] uppercase tracking-widest text-secondary" style="">© 2024 TerraNova Produce. All Rights Reserved.</span>
-<div class="flex gap-8">
-<a class="text-[0.7rem] uppercase tracking-widest text-secondary hover:text-primary transition-colors" href="#" style="">Privacy</a>
-<a class="text-[0.7rem] uppercase tracking-widest text-secondary hover:text-primary transition-colors" href="#" style="">Terms</a>
-<a class="text-[0.7rem] uppercase tracking-widest text-secondary hover:text-primary transition-colors" href="#" style="">Sustain</a>
+</div>
+</div>
+<!-- Category: Peppers & Chillies -->
+<div class="space-y-12">
+<div class="flex justify-between items-baseline border-b border-outline-variant/20 pb-4">
+<h2 class="text-3xl font-serif text-primary">Peppers &amp; Chillies</h2>
+<span class="label-md text-on-surface-variant">Hub: Mexico</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="grid grid-cols-1 gap-8">
+<!-- Horizontal Editorial Card -->
+<div class="flex flex-col md:flex-row bg-surface-container-low/80 backdrop-blur-sm border border-outline-variant/10">
+<div class="md:w-1/2 aspect-square">
+<img alt="Red habanero peppers" class="w-full h-full object-cover grayscale-[0.1]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqwc0DPDBO3e51q9EcPOecGMAHSx1p3i4d8mC0uzAP0toSbSdLVdPG9aFo5mSNQfaq-LQIjoPpMZ_U3tA9h12fjXHO-14BHv5_an-KSMkc0RxPRYO2izPsSrLcRmU02Xjk7b0Ahae2MINS1wry2h3ufiCDI0MwFYBXCrbGI11LHWVsIEmVyqbuFBi6ya_tfKPqAhXYcMr6YJVhgkE5NYnzIL_IoYvlZh7hLo5V5Jg0mio_rg8h6xtZDJ6dJNFdRYtB4j-aqVbPkvY"/>
+</div>
+<div class="md:w-1/2 p-10 flex flex-col justify-center">
+<p class="label-md text-primary mb-2">S-102</p>
+<h3 class="text-3xl font-serif mb-4">Habanero</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">High-demand variety sourced from Mexico, available year-round with consistent supply and reliable export quality.</p>
+<div class="space-y-2 border-t border-outline-variant/20 pt-4">
+<div class="flex justify-between">
+<span class="label-md text-[10px]">Seasonality</span>
+<span class="text-xs font-medium">Year-Round</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<!-- Small Card -->
+<div class="bg-surface-container-lowest/60 backdrop-blur-sm p-6 flex flex-col border border-outline-variant/10">
+<div class="aspect-square mb-6 bg-surface-container-low overflow-hidden">
+<img alt="Bird's eye chillies" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_u-1ow3plva7oZYqMflkyHyCdPQugpqvzZbmUdvTpSyIeX0dImTadsQtC6WM3QRWKxBHMLoc4WPuSf3AIDAXY4E0O8tbHfpcYsBr_rWhJRCEqalSdFZa0uDgL7pKqpqYBkgxzHTedXEV1qG4baZCunryAD_hUr1DIsU7ty8Gm9l8IJItj31au0-GM4o6FZ5dgW5gdhWcXZFLzxQPCfuD34vnNOQ64BiKs_VC9W0JT--quHGaWkL7DlhfEIYfYfV0M5UPNVJRN-N0"/>
+</div>
+<h4 class="text-lg font-serif mb-2">Lime</h4>
+<p class="label-md text-[10px] text-on-surface-variant mb-4">Origin: MEXICO</p>
+</div>
+<!-- Small Card -->
+<div class="bg-surface-container-lowest/60 backdrop-blur-sm p-6 flex flex-col border border-outline-variant/10">
+<div class="aspect-square mb-6 bg-surface-container-low overflow-hidden">
+<img alt="Poblano peppers" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWv5BCnNafui5T_urS9wklp_dWXkVpFjP46qgalH-j-oxM9_74Yb7AHBvUg4ShBfYWywPvu9hhTiVLPqK-Lk8U8MLEUGmxMbaPBCkv-QUaT1x3hLzxKqCnnlRjFLIPNba6fRgvAt5Sx1NHiF_k6K9-hiTTE2I_AunvOtwXC_9MavnQQV0azaV1JHyvWSd3lXhCXuiKBpau9Rgoa8CZbtLZiyjb2SpPKiyDm2KCDVFrvAudtaw3MYCwDncIcoTzzq5XVEesbsC6P5w"/>
+</div>
+<h4 class="text-lg font-serif mb-2">Poblano Peppers</h4>
+<p class="label-md text-[10px] text-on-surface-variant mb-4">Origin: Mexico</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Category: Tropical & Exotic -->
+<div class="space-y-12">
+<div class="flex justify-between items-baseline border-b border-outline-variant/20 pb-4">
+<h2 class="text-3xl font-serif text-primary">Tropical &amp; Exotic Products</h2>
+<span class="label-md text-on-surface-variant">Hub: Africa</span>
+</div>
+<div class="grid grid-cols-12 gap-8">
+<div class="col-span-12 lg:col-span-4 bg-surface-container-low/80 backdrop-blur-sm p-10 flex flex-col border border-outline-variant/10">
+<h3 class="text-4xl font-serif mb-6 leading-tight">Reliable Production Conditions</h3>
+<p class="body-lg text-on-surface-variant mb-8 leading-relaxed">
+                            Our sourcing partners ensure stable production and consistent supply, even in challenging seasonal conditions.</p>
+<div class="mt-auto space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-brand-green">water_drop</span>
+<span class="label-md text-xs">98% Water Reclamation</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-brand-orange">eco</span>
+<span class="label-md text-xs">Zero Synthetic Pesticide</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-brand-gold">wb_sunny</span>
+<span class="label-md text-xs">Optimal Climate Sync</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
+<!-- Exotic Card -->
+<div class="group relative overflow-hidden bg-surface-container-lowest h-full min-h-[400px]">
+<img alt="Dragon fruit" class="absolute inset-0 w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkqtdXm91eDbW56_sh0S-qgtI8hM0DgAxpD2z-w6W9DKsemnTjIdW3YU30ctaUU2P2Dtc0a29KUw-kPzsiiWMQUO5HvWsZCOFTUcPLio7ekapAAUQ-cmu6uP3yYfk7_I_ztioIkboYJkVz81kBYxUQPaDxspy7E1HxkQwhD0ZxHddcMv0bW38xO_GAvgoOHehVc47CMCV3NdYZFARTCSvLfuM9BiV_C61qn0TbJ2LaKqqql1VQAWc0XmeW7GDRa0gSsCeKSBHxEY4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-brand-green/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-on-primary">
+<p class="label-md text-brand-gold mb-2">Exotic Series</p>
+<h4 class="text-2xl font-serif">Yam</h4>
+<p class="text-sm mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">Inquire about Available | 100% Quality</p>
+</div>
+</div>
+<!-- Exotic Card -->
+<div class="group relative overflow-hidden bg-surface-container-lowest h-full min-h-[400px]">
+<img alt="Pineapples" class="absolute inset-0 w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJp0Lnie2OVojIqlsPAY_8Rr0aY_Ey_SuHmOF01V-vVhwo3zJtThNPTiY-jsoZVa3RNrNFitjwuLJX2BIA-TzjmmlbR847Jdb6acsWNxVRqS6P_k956gJbGELnsc9gYV9l-ieeQrtjdkmVpKKaZP2RE81j0xHuiPBSRBoB9J9wy5iVU4Gg3QtxvMyQr5KHH0HbT3-Lh22OXt8cNW0do-CNfmVPMn0tz7UhfFoPSTu9fwT7j2CSdRntgZPD8Dk4A_fAL-rNIjKNSn0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-brand-orange/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-on-primary">
+<p class="label-md text-brand-gold mb-2">Exotic Series</p>
+<h4 class="text-2xl font-serif">MD2 Golden Pineapple</h4>
+<p class="text-sm mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">Year-Round | 100% Quality</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Ledger: Seasonal Availability -->
+<section class="px-12 max-w-screen-2xl mx-auto mt-40">
+<div class="bg-surface-container-high/60 backdrop-blur-sm p-12 border border-outline-variant/10">
+<div class="mb-12">
+<h2 class="text-3xl font-serif text-primary mb-2">Product Availability Overview</h2>
+<p class="label-md text-on-surface-variant">Global Supply according to the season</p>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="border-b border-outline-variant">
+<tr>
+<th class="pb-6 label-md text-on-surface-variant">Commodity</th>
+<th class="pb-6 label-md text-on-surface-variant">Origin</th>
+<th class="pb-6 label-md text-on-surface-variant text-center">AUG</th>
+<th class="pb-6 label-md text-on-surface-variant text-center">SEP</th>
+<th class="pb-6 label-md text-on-surface-variant text-center">OCT</th>
+<th class="pb-6 label-md text-on-surface-variant text-center">NOV</th>
+<th class="pb-6 label-md text-on-surface-variant text-right">Availability</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10">
+<tr class="group hover:bg-surface-container/40 transition-colors">
+<td class="py-8 font-serif text-xl">Yam</td>
+<td class="py-8 text-sm">Ghana</td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full bg-brand-green mx-auto"></div></td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full bg-brand-orange mx-auto"></div></td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full bg-brand-gold mx-auto"></div></td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full bg-primary mx-auto"></div></td>
+<td class="py-8 text-right font-serif text-lg">Year-round</td>
+</tr>
+<tr class="group hover:bg-surface-container/40 transition-colors">
+<td class="py-8 font-serif text-xl">Okra</td>
+<td class="py-8 text-sm">China</td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full bg-brand-green mx-auto"></div></td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full bg-brand-green mx-auto"></div></td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full border border-brand-green mx-auto"></div></td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full border border-brand-green mx-auto"></div></td>
+<td class="py-8 text-right font-serif text-lg">Seasonal</td>
+</tr>
+<tr class="group hover:bg-surface-container/40 transition-colors">
+<td class="py-8 font-serif text-xl">Karela</td>
+<td class="py-8 text-sm">India</td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full bg-brand-gold mx-auto"></div></td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full bg-brand-gold mx-auto"></div></td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full bg-brand-gold mx-auto"></div></td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full bg-brand-gold mx-auto"></div></td>
+<td class="py-8 text-right font-serif text-lg">Year-round</td>
+</tr>
+<tr class="group hover:bg-surface-container/40 transition-colors">
+<td class="py-8 font-serif text-xl">Habanero</td>
+<td class="py-8 text-sm">Mexico</td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full border border-brand-orange mx-auto"></div></td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full bg-brand-orange mx-auto"></div></td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full bg-brand-orange mx-auto"></div></td>
+<td class="py-8 text-center"><div class="w-2 h-2 rounded-full bg-brand-orange mx-auto"></div></td>
+<td class="py-8 text-right font-serif text-lg">Seasonal</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#e8e8e6]/90 backdrop-blur-sm text-[#182310] relative z-10 border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 w-full px-12 py-20 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-serif mb-8">TerraNova</div>
+<p class="text-sm leading-relaxed text-[#2d3924]/70">
+                    Scaling agricultural excellence through precision logistics and ethical sourcing.
+                </p>
+</div>
+<div class="space-y-4">
+<p class="label-md mb-6">Operations</p>
+<a class="block text-sm text-[#2d3924]/70 hover:translate-x-1 transition-transform duration-300" href="#">Alicante</a>
+<a class="block text-sm text-[#2d3924]/70 hover:translate-x-1 transition-transform duration-300" href="#">Ghana</a>
+<a class="block text-sm text-[#2d3924]/70 hover:translate-x-1 transition-transform duration-300" href="#">Mexico</a>
+<a class="block text-sm text-[#2d3924]/70 hover:translate-x-1 transition-transform duration-300" href="#">China</a>
+</div>
+<div class="space-y-4">
+<p class="label-md mb-6">Legal</p>
+<a class="block text-sm text-[#2d3924]/70 hover:translate-x-1 transition-transform duration-300" href="#">Privacy Policy</a>
+<a class="block text-sm text-[#2d3924]/70 hover:translate-x-1 transition-transform duration-300" href="#">Terms of Service</a>
+<a class="block text-sm text-[#2d3924]/70 hover:translate-x-1 transition-transform duration-300" href="#">Compliance</a>
+</div>
+<div class="space-y-6">
+<p class="label-md mb-6">Supply Portal</p>
+<button class="w-full bg-primary text-on-primary py-4 label-md hover:bg-brand-green transition-colors duration-300">Partner Login</button>
+<p class="text-[10px] text-[#2d3924]/50 leading-tight">
+                    © 2024 TerraNova Global. All rights reserved. Registered trademark of TerraNova Logistics S.A.
+                </p>
 </div>
 </div>
 </footer>
-</main>
+
 </body></html>
